@@ -1,0 +1,1164 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:doap="http://usefulinc.com/ns/doap#"
+    xmlns="http://spdx.org/rdf/terms#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>2265af198aecbec54befb8776664c5d58bd62f94</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>ef298db838c7efa1240b7ada2f191993b00f180e</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>d5588e5ce27b267ba5acea0a14eccd0f17734a69</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>add800651b3abc212ae0f460c84237903b6e7f45</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>33d34d591326e57d5e81bfc518feefba633b20b2</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>4988d88650ebdf31067e5b7cc1e64e55dacc2c10</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>0dc15a38efc722cfa3a864d4576b3ba6296feb71</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>88874951fc6df55e8dc7c24a1fd07fd52cdfac87</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>8e315918cea5f440d6cb0d6d6ab5853eaf633b1b</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>4a0d8ffe2ca6758b6302878db5014005483e52cc</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>f1092bbbb9fa98ca4b065fdae27f7b261c9c580c</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>f80a86c73eeb479bd96669d8a2bddf94c3542c45</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>3e5bb884ec856c132f844735d7275060df17c122</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>2324efbcb3f8f8aa0c0fb6c22bfa9253ee065efd</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>393788323e47cbdcb7c2b8bbd3c53bfe654368d1</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>f10af663e619de8d51f2d77bd5fe54b390b9b194</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>e27e288cc993c1fde78e7498244b0fc1cd30eed4</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>f868f410e72a6eab9f87cf5279790b0f64a3112c</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>ee69fbbb5c6a837abd7da5be6502602f3e179368</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>354b36e3a38cf6ccf47053b2bc75e12919c768f5</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>a9a07b7e8050a2af66a713c411711cc15358443a</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>e35e469689bb799ace768022cddf476d47f91d2f</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <SpdxDocument rdf:about="http://www.spdx.org/spdxdocs/SAHomeMonitor">
+    <referencesFile>
+      <File rdf:nodeID="A0">
+        <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+        <fileName>res/values/styles.xml</fileName>
+        <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+        <checksum>
+          <Checksum>
+            <checksumValue>bf1090b7346c9aba3442763ccc2f22266ad113e7</checksumValue>
+            <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+          </Checksum>
+        </checksum>
+        <licenseComments></licenseComments>
+        <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+        <rdfs:comment></rdfs:comment>
+        <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+      </File>
+    </referencesFile>
+    <referencesFile>
+      <File rdf:nodeID="A1">
+        <licenseComments></licenseComments>
+        <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+        <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+        <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <fileName>res/drawable-xxhdpi/textborder.xml</fileName>
+        <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+        <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <rdfs:comment></rdfs:comment>
+        <checksum>
+          <Checksum>
+            <checksumValue>7487bab1fb0a130a6980038b647ee460d2268999</checksumValue>
+            <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+          </Checksum>
+        </checksum>
+      </File>
+    </referencesFile>
+    <referencesFile>
+      <File rdf:nodeID="A2">
+        <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <licenseComments></licenseComments>
+        <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+        <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+        <rdfs:comment></rdfs:comment>
+        <fileName>src/com/sourceauditor/sahomemonitor/GcmBroadcastReceiver.java</fileName>
+        <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+        <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <checksum>
+          <Checksum>
+            <checksumValue>d8082a07edf81efed70ae23bbd8f5165f16533d9</checksumValue>
+            <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+          </Checksum>
+        </checksum>
+      </File>
+    </referencesFile>
+    <referencesFile>
+      <File rdf:nodeID="A3">
+        <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+        <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+        <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+        <fileName>src/com/sourceauditor/sahomemonitor/GcmIntentService.java</fileName>
+        <rdfs:comment></rdfs:comment>
+        <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <licenseComments></licenseComments>
+        <checksum>
+          <Checksum>
+            <checksumValue>6807e59e5705771c1c965951b313ce8ffc50b569</checksumValue>
+            <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+          </Checksum>
+        </checksum>
+      </File>
+    </referencesFile>
+    <creationInfo>
+      <CreationInfo>
+        <licenseListVersion>1.20</licenseListVersion>
+        <created>2014-08-23T11:08:50Z</created>
+        <rdfs:comment></rdfs:comment>
+        <creator>Person:Gary O'Neall</creator>
+      </CreationInfo>
+    </creationInfo>
+    <referencesFile>
+      <File rdf:nodeID="A4">
+        <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+        <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <licenseComments></licenseComments>
+        <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+        <checksum>
+          <Checksum>
+            <checksumValue>7487bab1fb0a130a6980038b647ee460d2268999</checksumValue>
+            <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+          </Checksum>
+        </checksum>
+        <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <rdfs:comment></rdfs:comment>
+        <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+        <fileName>res/drawable-xhdpi/textborder.xml</fileName>
+      </File>
+    </referencesFile>
+    <referencesFile>
+      <File rdf:nodeID="A5">
+        <licenseComments></licenseComments>
+        <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+        <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+        <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+        <checksum>
+          <Checksum>
+            <checksumValue>82b35720079112abfc099ae92ec4a4f35d190211</checksumValue>
+            <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+          </Checksum>
+        </checksum>
+        <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <rdfs:comment></rdfs:comment>
+        <fileName>res/values-v14/styles.xml</fileName>
+      </File>
+    </referencesFile>
+    <referencesFile>
+      <File rdf:nodeID="A6">
+        <rdfs:comment></rdfs:comment>
+        <fileName>res/drawable-xxhdpi/ic_launcher.png</fileName>
+        <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+        <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <licenseComments></licenseComments>
+        <checksum>
+          <Checksum>
+            <checksumValue>83ded14cdff196da97a2e0fa16d9415228191fa7</checksumValue>
+            <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+          </Checksum>
+        </checksum>
+        <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_other"/>
+        <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+        <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+      </File>
+    </referencesFile>
+    <referencesFile>
+      <File rdf:nodeID="A7">
+        <licenseComments></licenseComments>
+        <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+        <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+        <rdfs:comment></rdfs:comment>
+        <checksum>
+          <Checksum>
+            <checksumValue>bd72120c9411b6b9bc748ae0f2849c9e0e49f79b</checksumValue>
+            <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+          </Checksum>
+        </checksum>
+        <fileName>res/menu/main.xml</fileName>
+        <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+        <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+      </File>
+    </referencesFile>
+    <referencesFile>
+      <File rdf:nodeID="A8">
+        <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+        <checksum>
+          <Checksum>
+            <checksumValue>3881a40b63af7683a7e1f116f72a555ff48a9326</checksumValue>
+            <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+          </Checksum>
+        </checksum>
+        <rdfs:comment></rdfs:comment>
+        <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+        <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <fileName>res/values/strings.xml</fileName>
+        <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <licenseComments></licenseComments>
+        <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+      </File>
+    </referencesFile>
+    <describesPackage>
+      <Package rdf:about="http://www.spdx.org/spdxdocs/SAHomeMonitor?package">
+        <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+        <hasFile rdf:nodeID="A7"/>
+        <hasFile rdf:nodeID="A3"/>
+        <hasFile>
+          <File rdf:nodeID="A9">
+            <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+            <checksum>
+              <Checksum>
+                <checksumValue>ceb9ef989b118ce51ae27a493f5849d33af00ac8</checksumValue>
+                <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </Checksum>
+            </checksum>
+            <rdfs:comment></rdfs:comment>
+            <fileName>res/values-v11/styles.xml</fileName>
+            <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+            <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <licenseComments></licenseComments>
+            <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+          </File>
+        </hasFile>
+        <supplier>Person:Gary O'Neall</supplier>
+        <hasFile rdf:nodeID="A4"/>
+        <hasFile>
+          <File rdf:nodeID="A10">
+            <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+            <rdfs:comment></rdfs:comment>
+            <checksum>
+              <Checksum>
+                <checksumValue>3b51fb737029856b2df32935390f28c1183b7c9c</checksumValue>
+                <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </Checksum>
+            </checksum>
+            <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <licenseComments></licenseComments>
+            <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+            <fileName>src/com/sourceauditor/sahomemonitor/GcmConstants.java</fileName>
+            <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+          </File>
+        </hasFile>
+        <hasFile>
+          <File rdf:nodeID="A11">
+            <fileName>res/drawable-ldpi/textborder.xml</fileName>
+            <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+            <checksum>
+              <Checksum>
+                <checksumValue>7487bab1fb0a130a6980038b647ee460d2268999</checksumValue>
+                <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </Checksum>
+            </checksum>
+            <licenseComments></licenseComments>
+            <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+            <rdfs:comment></rdfs:comment>
+            <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+          </File>
+        </hasFile>
+        <hasFile>
+          <File rdf:nodeID="A12">
+            <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_other"/>
+            <rdfs:comment></rdfs:comment>
+            <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+            <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <licenseComments></licenseComments>
+            <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <checksum>
+              <Checksum>
+                <checksumValue>f8cbe1b82ece1fbd3ca3693a0f6ebc75c3358ec2</checksumValue>
+                <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </Checksum>
+            </checksum>
+            <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+            <fileName>res/drawable-mdpi/ic_launcher.png</fileName>
+          </File>
+        </hasFile>
+        <downloadLocation>http://www.spdx.org/packageDownloads/SAHomeMonitor</downloadLocation>
+        <versionInfo>1.0</versionInfo>
+        <description>This is an experimental client application which connects to an equally experimental server running on a Raspberry PI connected to a webcam and alarm signals.  The server source can be found in the SAHomeServer project.</description>
+        <originator>Person:Gary O'Neall</originator>
+        <licenseInfoFromFiles rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <hasFile rdf:nodeID="A5"/>
+        <hasFile>
+          <File rdf:nodeID="A13">
+            <fileName>libs/android-support-v4.jar</fileName>
+            <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+            <rdfs:comment></rdfs:comment>
+            <checksum>
+              <Checksum>
+                <checksumValue>efec67655f6db90757faa37201efcee2a9ec3507</checksumValue>
+                <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </Checksum>
+            </checksum>
+            <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+            <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_binary"/>
+            <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <licenseComments></licenseComments>
+          </File>
+        </hasFile>
+        <hasFile>
+          <File rdf:nodeID="A14">
+            <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <licenseComments></licenseComments>
+            <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+            <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <rdfs:comment></rdfs:comment>
+            <checksum>
+              <Checksum>
+                <checksumValue>23e5e7eea85c0b45c530bbdbd404403b246ba8da</checksumValue>
+                <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </Checksum>
+            </checksum>
+            <fileName>src/com/sourceauditor/sahomemonitor/MainActivity.java</fileName>
+            <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+            <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+          </File>
+        </hasFile>
+        <packageVerificationCode>
+          <PackageVerificationCode>
+            <packageVerificationCodeValue>3a15e273416263cd0193c718f493d3a9490b394a</packageVerificationCodeValue>
+          </PackageVerificationCode>
+        </packageVerificationCode>
+        <hasFile>
+          <File rdf:nodeID="A15">
+            <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <fileName>res/drawable-mdpi/textborder.xml</fileName>
+            <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+            <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+            <checksum>
+              <Checksum>
+                <checksumValue>7487bab1fb0a130a6980038b647ee460d2268999</checksumValue>
+                <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </Checksum>
+            </checksum>
+            <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+            <rdfs:comment></rdfs:comment>
+            <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <licenseComments></licenseComments>
+          </File>
+        </hasFile>
+        <hasFile rdf:nodeID="A8"/>
+        <hasFile>
+          <File rdf:nodeID="A16">
+            <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+            <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+            <checksum>
+              <Checksum>
+                <checksumValue>b215c89b9044bf83c72bb2aa95897bb0dcfc4cd4</checksumValue>
+                <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </Checksum>
+            </checksum>
+            <licenseComments></licenseComments>
+            <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+            <rdfs:comment></rdfs:comment>
+            <fileName>res/values/dimens.xml</fileName>
+          </File>
+        </hasFile>
+        <hasFile rdf:nodeID="A1"/>
+        <hasFile>
+          <File rdf:nodeID="A17">
+            <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <licenseComments></licenseComments>
+            <checksum>
+              <Checksum>
+                <checksumValue>e45885d232f7a0e73f9f5f40f3a9422b8df07dc2</checksumValue>
+                <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </Checksum>
+            </checksum>
+            <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+            <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+            <fileName>res/layout/activity_main.xml</fileName>
+            <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+            <rdfs:comment></rdfs:comment>
+            <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+          </File>
+        </hasFile>
+        <hasFile>
+          <File rdf:nodeID="A18">
+            <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+            <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+            <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+            <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <rdfs:comment></rdfs:comment>
+            <checksum>
+              <Checksum>
+                <checksumValue>7487bab1fb0a130a6980038b647ee460d2268999</checksumValue>
+                <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </Checksum>
+            </checksum>
+            <fileName>res/drawable-hdpi/textborder.xml</fileName>
+            <licenseComments></licenseComments>
+          </File>
+        </hasFile>
+        <licenseDeclared rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+        <summary>Android application to monitor a home webcam connected to server running SAHomeServer</summary>
+        <hasFile rdf:nodeID="A2"/>
+        <hasFile>
+          <File rdf:nodeID="A19">
+            <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_other"/>
+            <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+            <licenseComments></licenseComments>
+            <rdfs:comment></rdfs:comment>
+            <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+            <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <checksum>
+              <Checksum>
+                <checksumValue>98b66fdda8255fcf8ded6b705517aa48216218d6</checksumValue>
+                <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </Checksum>
+            </checksum>
+            <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <fileName>res/drawable-xhdpi/ic_launcher.png</fileName>
+          </File>
+        </hasFile>
+        <hasFile>
+          <File rdf:nodeID="A20">
+            <licenseComments></licenseComments>
+            <fileName>res/values-w820dp/dimens.xml</fileName>
+            <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+            <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+            <checksum>
+              <Checksum>
+                <checksumValue>89ea2b10ff70f7b491cbcea7e366cfdb4aebcc5e</checksumValue>
+                <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </Checksum>
+            </checksum>
+            <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+            <rdfs:comment></rdfs:comment>
+          </File>
+        </hasFile>
+        <name>SAHomeMonitor</name>
+        <hasFile rdf:nodeID="A0"/>
+        <hasFile>
+          <File rdf:nodeID="A21">
+            <licenseComments></licenseComments>
+            <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+            <fileName>res/layout/fragment_main.xml</fileName>
+            <checksum>
+              <Checksum>
+                <checksumValue>6269763c8ea82de1d1e446bc80c4ecbc9ac61437</checksumValue>
+                <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </Checksum>
+            </checksum>
+            <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+            <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+            <rdfs:comment></rdfs:comment>
+            <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+          </File>
+        </hasFile>
+        <hasFile>
+          <File rdf:nodeID="A22">
+            <licenseComments></licenseComments>
+            <fileName>res/drawable-hdpi/ic_launcher.png</fileName>
+            <checksum>
+              <Checksum>
+                <checksumValue>8fcbd6375e2dd1996cedaaf7e3a8950364b886a0</checksumValue>
+                <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </Checksum>
+            </checksum>
+            <rdfs:comment></rdfs:comment>
+            <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+            <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+            <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_other"/>
+            <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+            <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+          </File>
+        </hasFile>
+        <hasFile rdf:nodeID="A6"/>
+        <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+      </Package>
+    </describesPackage>
+    <dataLicense rdf:resource="http://spdx.org/licenses/CC0-1.0"/>
+    <referencesFile rdf:nodeID="A20"/>
+    <referencesFile rdf:nodeID="A22"/>
+    <referencesFile rdf:nodeID="A13"/>
+    <referencesFile rdf:nodeID="A18"/>
+    <referencesFile rdf:nodeID="A21"/>
+    <referencesFile rdf:nodeID="A12"/>
+    <specVersion>SPDX-1.2</specVersion>
+    <referencesFile rdf:nodeID="A16"/>
+    <referencesFile rdf:nodeID="A9"/>
+    <referencesFile rdf:nodeID="A19"/>
+    <referencesFile rdf:nodeID="A17"/>
+    <referencesFile rdf:nodeID="A15"/>
+    <referencesFile rdf:nodeID="A14"/>
+    <referencesFile rdf:nodeID="A10"/>
+    <referencesFile rdf:nodeID="A11"/>
+  </SpdxDocument>
+  <Checksum>
+    <checksumValue>2867ef58dee65a10a88279ce3ed3f14e6f56b1ef</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>743472737aac864c74a5b849cbe74deab73d2a28</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>a1d7d921117caaa4d3d51408c08eb252a9e732c2</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>7472d8f03465002ddeb3c12745f8c4e9dbd29134</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>36d6c115396d76e379361eea93b8a5391f86b3c6</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>3cd49e876f820811177819909711bb7070031b60</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>23c25c05b2df0b1dedc5e32047cdd05d6de0b22f</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>667f00427ab86c70911d3657d01d19f5f6192983</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>7fd11c6fc7fd7eb2b578713fe5721406dd8a48f5</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>96f33ec45edd36a77156f7f275a7a77255231eb9</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>104d039e9e85b4c0eac9671eb756842396b3dc60</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>973ef787fc2f581acfa806a23ffc3fca6cb87bc4</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>80949afbb95d79e8f17ee9801fc466d4188fc201</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>33b4db3f516f5774a8066f050fb0bb90e5436169</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>7b5ab95e147211838b1763763c427f9b7b778cb7</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>737453517f5bfc2522441f70327200a216c00373</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>784603615cd9558045bdaef14ca88c74fbf9d732</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>81478e918d53a0b465e519942136eaa3cc645f24</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>c88b6923cb8e7c2db0dde3b60c0bb7edcb13af3a</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>b392382ad0d86f0e6bbdef82abdf9074d5edbc68</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>49fc1599bf6d9dd16d30153cfb15d9e64d9256b0</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>8a58271a2bc70c50f0a354372c4efe708e49ffd2</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>656155f386fe0c80d76e53a64dd6c327ebc1b0ab</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <File>
+    <copyrightText>Copyright (c) 2014, Gary O'Neall</copyrightText>
+    <noticeText>Copyright 2014 Gary O'Neall&#xD;
+&#xD;
+   Licensed under the Apache License, Version 2.0 (the "License");&#xD;
+   you may not use this file except in compliance with the License.&#xD;
+   You may obtain a copy of the License at&#xD;
+&#xD;
+       http://www.apache.org/licenses/LICENSE-2.0&#xD;
+&#xD;
+   Unless required by applicable law or agreed to in writing, software&#xD;
+   distributed under the License is distributed on an "AS IS" BASIS,&#xD;
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xD;
+   See the License for the specific language governing permissions and&#xD;
+   limitations under the License.&#xD;
+&#xD;
+ This package includes software from:&#xD;
+    Google Cloud Messaging from Android https://code.google.com/p/gcm/&#xD;
+    Licensed under the Apache 2.0 License</noticeText>
+    <licenseComments></licenseComments>
+    <licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+    <fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+    <licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+    <checksum>
+      <Checksum>
+        <checksumValue>ff72f99f208ec882e7d871271996ebbaba83d2c3</checksumValue>
+        <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+      </Checksum>
+    </checksum>
+    <rdfs:comment></rdfs:comment>
+    <fileName>res/menu/main_activity_actions.xml</fileName>
+  </File>
+  <Checksum>
+    <checksumValue>5c94f7fab6901686a8a2e9d4e63e95c3a70f0b65</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>b393eb58aa91005797e303981828a26b998a2f35</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>50bd05b854cfd67046b945a649226bf8ec68cf0b</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>4c4957f01e9ac96921df791590b3cc961673b857</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>4a0d8ffe2ca6758b6302878db5014005483e52cc</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>9b58679fb2f0212b18f6f7ccc362dbe01fde2907</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>1f546706264d62de2bf3657d2c586bc3691ef1e9</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>f6fc5d75a7013c305ef2f7c2040d902de236ae9e</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>cb8b4f58e60cacc3da5dd7a9b1e7510e95869853</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>b56d50ea611be09fe1cf35370a83b1d3546d8584</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>e671ddc6e3179122352f68dd86b1d33106e4e0e9</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>cdaafce61f7c53104a1d54695058df16560ab55a</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>5f530ce646c4c8777b69c1c0ff0950e655257dff</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>a1d7d921117caaa4d3d51408c08eb252a9e732c2</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>ab3d2069b9ebe5dc22eb8c6ca701955fcf009fab</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>b99ccfd9cdf428cf949e830f939dcbebd46256e2</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>d68474cb7ed95740a9b4c954438ccbac94ceb052</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>c42aa828284c07513d4cc42a45f7dde92bb74c06</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>e093743cea97b58b4d4b9cef697210f3694f19e7</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>c37f42fdebf75f6ff7fb88053aa0390266560c78</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>b2a2631aee4620ba52e478ab85e4f470541a0edb</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>269cc9a6b89eee6b25a4ef099db097f1d937cbb3</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>a40973d2688bcdd5a1761678f4cb154e9bfb4aeb</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>36e46dab3e49f9dbbb0a3bdfbfff6252696aad36</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>79650fc5d8d16a301f448708bcd0cbcd7f6b387a</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>47dd1fe4a0b483b103b3116f9921a63c80a62565</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>4da888c3a7e0132cba6e841dd19c55ccc77c2f55</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>a907c9daaaae795f993095b1c870613ed9726df9</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>bc2868314938da5c809b931c260612710bb6ddfa</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>b45bc16166db81002184978e0ba20cbbbdfc74d7</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>1fb4276df702858e63036a381c11b4078465970c</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>7090502afde3bc1d43b4cd7bb725a5e2e6ac12c0</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>39316092b8df6dd09742c18e5f36f5db46b0fc00</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>67d9732f17b5217757edcaf9112e0aa5566c6370</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>ebd9a9f1fa3d0711f58a30b0ebed332877117608</packageVerificationCodeValue>
+  </PackageVerificationCode>
+  <Checksum>
+    <checksumValue>253d0576366cc3b6d661c73b01b793ea520683b4</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <Checksum>
+    <checksumValue>e867573a68dc35cafacca0a3b5dfb707612c2ce4</checksumValue>
+    <algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+  </Checksum>
+  <PackageVerificationCode>
+    <packageVerificationCodeValue>47dd1896f92b2a3b37d903bdb897ca19e1a2a8dc</packageVerificationCodeValue>
+  </PackageVerificationCode>
+</rdf:RDF>

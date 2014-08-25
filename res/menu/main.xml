@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sahomemonitor.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item android:id="@+id/action_display_reg" 
+        android:title="@string/action_show_reg" 
+        android:showAsAction="never">    
+    </item>
+    <item android:id="@+id/action_show_last_home_message" 
+        android:title="@string/action_last_home_message" 
+        android:showAsAction="never">
+    </item>
+    
+</menu>
