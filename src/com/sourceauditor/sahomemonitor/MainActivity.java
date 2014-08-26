@@ -80,20 +80,18 @@ public class MainActivity extends Activity {
 		if (DONT_USE_GCM) {
 			return;
 		}
-		if (checkPlayServices()) {
-	        // Check device for Play Services APK. If check succeeds, proceed with
-	        //  GCM registration.
-	        if (checkPlayServices()) {
-	            gcm = GoogleCloudMessaging.getInstance(this);
-	            regid = getRegistrationId(context);
+        // Check device for Play Services APK. If check succeeds, proceed with
+        //  GCM registration.
+        if (checkPlayServices()) {
+            gcm = GoogleCloudMessaging.getInstance(this);
+            regid = getRegistrationId(context);
 
-	            if (regid.isEmpty()) {
-	                registerInBackground();
-	            }
-	        } else {
-	            Log.i(TAG, "No valid Google Play Services APK found.");
-	        }
-		}
+            if (regid.isEmpty()) {
+                registerInBackground();
+            }
+        } else {
+            Log.i(TAG, "No valid Google Play Services APK found.");
+        }
 	}
 
 	/**
@@ -262,6 +260,14 @@ public class MainActivity extends Activity {
 			messageText.setText(msg);
 		}
 	}
+	
+	public void setLastHomeMessage(String homeMessage) {
+		this.lastHomeMessage = homeMessage;
+	}
+	
+	public String getLastHomeMessage() {
+		return this.lastHomeMessage;
+	}
 
 	private void showRegistrationId() {
 		setMessageText(getString(R.string.label_registration_id) + this.regid);
@@ -301,12 +307,9 @@ public class MainActivity extends Activity {
 	/**
 	 * UI Fragment for the Home Monitor UI Elements
 	 */
-	public class HomeMonitorUIFragment extends Fragment {
+	public static class HomeMonitorUIFragment extends Fragment {
 		
 		MediaController homeMonitorControl;
-
-		public HomeMonitorUIFragment() {
-		}
 
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -319,15 +322,16 @@ public class MainActivity extends Activity {
 		
 		@Override
 		public void onResume() {
+			MainActivity activity = (MainActivity)getActivity();
 	        super.onResume();
-			Intent intent = getActivity().getIntent();
-			lastHomeMessage = getString(R.string.default_message);
-			final SharedPreferences prefs = getSAHomeMonitorPreferences(context);
+			Intent intent = activity.getIntent();
+			String homeMessage = getString(R.string.default_message);
+			final SharedPreferences prefs = activity.getSAHomeMonitorPreferences(activity.getContext());
 			String homeMonitorUrl = prefs.getString(PROPERTY_HOME_MONITOR_URL, getString(R.string.home_monitor_url));
 			if (intent != null && intent.getAction().equals(ACTION_HOME_NOFICATION) && intent.getExtras() != null) {
 				String intentMessage = intent.getExtras().getString(EXTRA_MESSAGE_FROM_HOME);
 				if (intentMessage != null &&!intentMessage.trim().isEmpty()) {
-					lastHomeMessage = intentMessage;
+					homeMessage = intentMessage;
 				}
 				String intentHomeMonitorUrl = intent.getExtras().getString(EXTRA_HOME_MONITOR_URL);
 				if (intentHomeMonitorUrl != null && !intentHomeMonitorUrl.trim().isEmpty()) {
@@ -338,7 +342,8 @@ public class MainActivity extends Activity {
 				    editor.commit();
 				}
 			}
-			setMessageText(lastHomeMessage);
+			activity.setMessageText(homeMessage);
+			activity.setLastHomeMessage(homeMessage);
 			VideoView homeMonitorView = (VideoView) getActivity().findViewById(R.id.homeMonitorVideoView);
 			if (homeMonitorView != null) {	
 				Uri videoUri = Uri.parse(homeMonitorUrl);				
@@ -348,5 +353,10 @@ public class MainActivity extends Activity {
 			homeMonitorControl.setAnchorView(homeMonitorView);
 			homeMonitorView.setMediaController(homeMonitorControl);
 		}
+	}
+
+
+	public Context getContext() {
+		return this.context;
 	}
 }
