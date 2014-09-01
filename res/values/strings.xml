@@ -2,10 +2,9 @@
 <resources>
 
     <string name="app_name">SAHomeMonitor</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="default_message">no message from home</string>
-    <string name="home_monitor_url">https://archive.org/download/ksnn_compilation_master_the_internet/ksnn_compilation_master_the_internet_512kb.mp4</string>
+    <string name="home_monitor_url">http://24.6.171.151:8081</string>
     <string name="action_show_reg">Show Reg. ID</string>
     <string name="action_last_home_message">Last Msg. from Home</string>
     <string name="label_registration_id">Reg. ID: </string>

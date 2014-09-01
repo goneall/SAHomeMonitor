@@ -446,9 +446,9 @@ containing a value of this type.
         public static final int main=0x7f0a0000;
     }
     public static final class string {
-        public static final int action_last_home_message=0x7f060020;
-        public static final int action_settings=0x7f06001c;
-        public static final int action_show_reg=0x7f06001f;
+        public static final int action_last_home_message=0x7f06001f;
+        public static final int action_settings=0x7f06001b;
+        public static final int action_show_reg=0x7f06001e;
         public static final int app_name=0x7f06001a;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
@@ -539,10 +539,9 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f060018;
-        public static final int default_message=0x7f06001d;
-        public static final int hello_world=0x7f06001b;
-        public static final int home_monitor_url=0x7f06001e;
-        public static final int label_registration_id=0x7f060021;
+        public static final int default_message=0x7f06001c;
+        public static final int home_monitor_url=0x7f06001d;
+        public static final int label_registration_id=0x7f060020;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */

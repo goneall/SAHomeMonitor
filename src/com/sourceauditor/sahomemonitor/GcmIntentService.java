@@ -87,17 +87,23 @@ public class GcmIntentService extends IntentService {
     private void sendToMainActivity(Bundle extras) {
     	Intent sendMainIntent = new Intent(this, MainActivity.class);
     	sendMainIntent.setAction(MainActivity.ACTION_HOME_NOFICATION);
+    	sendMainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
     	if (extras != null) {
     		String homeMonitorUrl = extras.getString(MainActivity.EXTRA_HOME_MONITOR_URL);
-    		homeMonitorUrl = homeMonitorUrl.trim();
-    		if (!homeMonitorUrl.isEmpty()) {
-    			sendMainIntent.putExtra(MainActivity.EXTRA_HOME_MONITOR_URL, homeMonitorUrl);
+    		if (homeMonitorUrl != null) {
+    			homeMonitorUrl = homeMonitorUrl.trim();
+        		if (!homeMonitorUrl.isEmpty()) {
+        			sendMainIntent.putExtra(MainActivity.EXTRA_HOME_MONITOR_URL, homeMonitorUrl);
+        		}
     		}
+
         	String msg = extras.getString(MainActivity.EXTRA_MESSAGE_FROM_HOME);
-        	msg = msg.trim();
-        	if (!msg.isEmpty()) {
-        		sendMainIntent.putExtra(MainActivity.EXTRA_MESSAGE_FROM_HOME, msg);
-        	}      	
+        	if (msg != null) {
+            	msg = msg.trim();
+            	if (!msg.isEmpty()) {
+            		sendMainIntent.putExtra(MainActivity.EXTRA_MESSAGE_FROM_HOME, msg);
+            	}   
+        	}	
     	}
     	startActivity(sendMainIntent);
     }
