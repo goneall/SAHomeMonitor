@@ -19,6 +19,8 @@ package com.sourceauditor.sahomemonitor;
 
 import java.io.IOException;
 
+import com.camera.simplemjpeg.DoRead;
+import com.camera.simplemjpeg.MjpegView;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
@@ -31,7 +33,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -40,23 +41,27 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.MediaController;
 import android.widget.TextView;
-import android.widget.VideoView;
 
 public class MainActivity extends Activity {
 	
     public static final String PROPERTY_REG_ID = "registration_id";
     public static final String PROPERTY_HOME_MONITOR_URL = "monitor_url";
-    private static final String PROPERTY_APP_VERSION = "app_version";
+    public static final String PROPERTY_APP_VERSION = "app_version";
+    public static final String PROPERTY_PLAYER_WIDTH = "playwidth";
+    public static final String PROPERTY_PLAYER_HEIGHT = "playheight";
 	public static final String ACTION_HOME_NOFICATION = "com.sourceauditor.sahomemonitor.homenotification";
 
 	public static final String EXTRA_MESSAGE_FROM_HOME = "com.sourceauditor.sahomemonitor.messagefromhome";
 	public static final String EXTRA_HOME_MONITOR_URL = "com.sourceauditor.sahomemonitor.homemonitorurl";
-    private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
+    
+	public static final int DEFAULT_PLAYER_WIDTH = 640;
+	public static final int DEFAULT_PLAYER_HEIGHT = 480;
+	
+	private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
     static final String TAG = "SAHomeMonitor";
     
-    private static boolean DONT_USE_GCM=false;	// set to true for debugging on emulator
+    private static boolean DONT_USE_GCM=true;	// set to true for debugging on emulator
     
     GoogleCloudMessaging gcm;
     Context context;
@@ -285,10 +290,6 @@ public class MainActivity extends Activity {
 	    
 	    @Override
 		protected void onPause() {
-	    	VideoView homeMonitorView = (VideoView) findViewById(R.id.homeMonitorVideoView);
-	    	if (homeMonitorView != null) {
-	    		homeMonitorView.pause();
-	    	}
 	    	super.onPause();
 	    }
 	    
@@ -309,14 +310,12 @@ public class MainActivity extends Activity {
 	 */
 	public static class HomeMonitorUIFragment extends Fragment {
 		
-		MediaController homeMonitorControl;
 
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.fragment_main, container,
 					false);
-			homeMonitorControl = new MediaController(getActivity());
 			return rootView;
 		}
 		
@@ -344,16 +343,40 @@ public class MainActivity extends Activity {
 			}
 			activity.setMessageText(homeMessage);
 			activity.setLastHomeMessage(homeMessage);
-			VideoView homeMonitorView = (VideoView) getActivity().findViewById(R.id.homeMonitorVideoView);
-			if (homeMonitorView != null) {	
-				Uri videoUri = Uri.parse(homeMonitorUrl);				
-				homeMonitorView.setVideoURI(videoUri);
-				homeMonitorView.start();
+
+			MjpegView mv = (MjpegView) activity.findViewById(R.id.mjpegView); 
+			int width = prefs.getInt(PROPERTY_PLAYER_WIDTH, DEFAULT_PLAYER_WIDTH);
+			int height = prefs.getInt(PROPERTY_PLAYER_HEIGHT, DEFAULT_PLAYER_HEIGHT);
+	        if(mv != null){
+	        	mv.setResolution(width, height);
+	        	new DoRead(mv).execute(homeMonitorUrl);
+	        }
+	        else {
+	        	Log.e(TAG, "MJeg Viewer is null - can not start display");
+	        }
+		}
+		
+		@Override
+		public void onPause() {
+			super.onPause();
+			MainActivity activity = (MainActivity)getActivity();
+			MjpegView mv = (MjpegView) activity.findViewById(R.id.mjpegView); 
+			if (mv != null && mv.isStreaming()) {
+				mv.stopPlayback();
 			}
-			homeMonitorControl.setAnchorView(homeMonitorView);
-			homeMonitorView.setMediaController(homeMonitorControl);
+		}
+
+		@Override
+		public void onDestroy() {
+			MainActivity activity = (MainActivity)getActivity();
+			MjpegView mv = (MjpegView) activity.findViewById(R.id.mjpegView); 
+			if (mv != null) {
+				mv.freeCameraMemory();
+			}
+			super.onDestroy();
 		}
 	}
+	
 
 
 	public Context getContext() {

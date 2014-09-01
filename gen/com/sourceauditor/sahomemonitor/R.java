@@ -420,10 +420,10 @@ containing a value of this type.
         public static final int grayscale=0x7f070012;
         public static final int holo_dark=0x7f070005;
         public static final int holo_light=0x7f070006;
-        public static final int homeMonitorVideoView=0x7f070016;
         public static final int hybrid=0x7f070004;
         public static final int match_parent=0x7f07000c;
         public static final int messageFromHomeText=0x7f070015;
+        public static final int mjpegView=0x7f070016;
         public static final int monochrome=0x7f070013;
         public static final int none=0x7f070000;
         public static final int normal=0x7f070001;

@@ -22,8 +22,8 @@
 
     </TextView>
 
-    <VideoView
-        android:id="@+id/homeMonitorVideoView"
+    <com.camera.simplemjpeg.MjpegView
+        android:id="@+id/mjpegView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

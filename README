@@ -34,3 +34,6 @@ The source code is licensed under the Apache License version 2.0.
 See the NOTICE and LICENSE files for details.
 
 An SPDX file describing the project is available at SAHomeMonitor.spdx.
+
+NOTE: the folder sysincludes are copies of system and Android libary include files to work around
+a known bug where the Android native development kit is not compatibile with some versions of Eclipse
