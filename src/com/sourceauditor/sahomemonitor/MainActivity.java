@@ -33,6 +33,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -47,6 +48,7 @@ public class MainActivity extends Activity {
 	
     public static final String PROPERTY_REG_ID = "registration_id";
     public static final String PROPERTY_HOME_MONITOR_URL = "monitor_url";
+    public static final String PROPERTY_HOME_MONITOR_AUDIO_URL = "home_monitor_audio_url";
     public static final String PROPERTY_APP_VERSION = "app_version";
     public static final String PROPERTY_PLAYER_WIDTH = "playwidth";
     public static final String PROPERTY_PLAYER_HEIGHT = "playheight";
@@ -67,6 +69,8 @@ public class MainActivity extends Activity {
     Context context;
     String regid = "NOT SET";
 	private String lastHomeMessage = "No Message";
+	
+	private MediaPlayer audioPlayer = null;
     
 
 	@Override
@@ -75,10 +79,6 @@ public class MainActivity extends Activity {
 		context = getApplicationContext();
 		setContentView(R.layout.activity_main);
 		registerGcm();
-		if (savedInstanceState == null) {
-			getFragmentManager().beginTransaction()
-					.add(R.id.container, new HomeMonitorUIFragment()).commit();
-		}
 	}
 	
 	private void registerGcm() {
@@ -286,46 +286,9 @@ public class MainActivity extends Activity {
 	    @Override
 	    protected void onResume() {
 	        super.onResume();
-	    }
-	    
-	    @Override
-		protected void onPause() {
-	    	super.onPause();
-	    }
-	    
-	    @Override
-	    protected void onDestroy() {
-	    	// Not sure if the following is required.  The JavaDocs state close should be called, however,
-	    	// there is no close in any of the Google example close
-	    	if (this.gcm != null) {
-	    		gcm.close();
-	    		gcm = null;
-	    	}
-	    	super.onDestroy();
-	    }
-	    
-
-	/**
-	 * UI Fragment for the Home Monitor UI Elements
-	 */
-	public static class HomeMonitorUIFragment extends Fragment {
-		
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_main, container,
-					false);
-			return rootView;
-		}
-		
-		@Override
-		public void onResume() {
-			MainActivity activity = (MainActivity)getActivity();
-	        super.onResume();
-			Intent intent = activity.getIntent();
+			Intent intent = getIntent();
 			String homeMessage = getString(R.string.default_message);
-			final SharedPreferences prefs = activity.getSAHomeMonitorPreferences(activity.getContext());
+			final SharedPreferences prefs = getSAHomeMonitorPreferences(getContext());
 			String homeMonitorUrl = prefs.getString(PROPERTY_HOME_MONITOR_URL, getString(R.string.home_monitor_url));
 			if (intent != null && intent.getAction().equals(ACTION_HOME_NOFICATION) && intent.getExtras() != null) {
 				String intentMessage = intent.getExtras().getString(EXTRA_MESSAGE_FROM_HOME);
@@ -341,10 +304,10 @@ public class MainActivity extends Activity {
 				    editor.commit();
 				}
 			}
-			activity.setMessageText(homeMessage);
-			activity.setLastHomeMessage(homeMessage);
+			setMessageText(homeMessage);
+			setLastHomeMessage(homeMessage);
 
-			MjpegView mv = (MjpegView) activity.findViewById(R.id.mjpegView); 
+			MjpegView mv = (MjpegView) findViewById(R.id.mjpegView); 
 			int width = prefs.getInt(PROPERTY_PLAYER_WIDTH, DEFAULT_PLAYER_WIDTH);
 			int height = prefs.getInt(PROPERTY_PLAYER_HEIGHT, DEFAULT_PLAYER_HEIGHT);
 	        if(mv != null){
@@ -354,31 +317,33 @@ public class MainActivity extends Activity {
 	        else {
 	        	Log.e(TAG, "MJeg Viewer is null - can not start display");
 	        }
-		}
-		
-		@Override
-		public void onPause() {
+	    }
+	    
+	    @Override
+		protected void onPause() {
 			super.onPause();
-			MainActivity activity = (MainActivity)getActivity();
-			MjpegView mv = (MjpegView) activity.findViewById(R.id.mjpegView); 
+			MjpegView mv = (MjpegView) findViewById(R.id.mjpegView); 
 			if (mv != null && mv.isStreaming()) {
 				mv.stopPlayback();
 			}
-		}
-
-		@Override
-		public void onDestroy() {
-			MainActivity activity = (MainActivity)getActivity();
-			MjpegView mv = (MjpegView) activity.findViewById(R.id.mjpegView); 
+	    }
+	    
+	    @Override
+	    protected void onDestroy() {
+			MjpegView mv = (MjpegView) findViewById(R.id.mjpegView); 
 			if (mv != null) {
 				mv.freeCameraMemory();
 			}
 			super.onDestroy();
-		}
-	}
-	
-
-
+	    	// Not sure if the following is required.  The JavaDocs state close should be called, however,
+	    	// there is no close in any of the Google example close
+	    	if (this.gcm != null) {
+	    		gcm.close();
+	    		gcm = null;
+	    	}
+	    	super.onDestroy();
+	    }
+	    
 	public Context getContext() {
 		return this.context;
 	}

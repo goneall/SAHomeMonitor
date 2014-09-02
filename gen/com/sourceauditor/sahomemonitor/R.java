@@ -440,7 +440,6 @@ containing a value of this type.
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int fragment_main=0x7f030001;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
@@ -540,6 +539,7 @@ containing a value of this type.
          */
         public static final int common_signin_button_text_long=0x7f060018;
         public static final int default_message=0x7f06001c;
+        public static final int home_monitor_audio_url=0x7f060021;
         public static final int home_monitor_url=0x7f06001d;
         public static final int label_registration_id=0x7f060020;
         /**  Text on a placeholder buy button when Google Play services is not

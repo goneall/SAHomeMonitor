@@ -1,8 +1,30 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sourceauditor.sahomemonitor.MainActivity"
-    tools:ignore="MergeRootFrame" />
+    tools:context="com.sourceauditor.sahomemonitor.MainActivity" >
+    
+    <TextView
+        android:id="@+id/messageFromHomeText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textborder"
+        android:ems="10"
+        android:hint="@string/default_message"
+        android:lines="5"
+        android:maxLines="5" >
+
+    </TextView>
+
+    <com.camera.simplemjpeg.MjpegView
+        android:id="@+id/mjpegView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/messageFromHomeText"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
 
