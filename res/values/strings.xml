@@ -9,5 +9,8 @@
     <string name="action_last_home_message">Last Msg. from Home</string>
     <string name="label_registration_id">Reg. ID: </string>
     <string name="home_monitor_audio_url">http://10.0.0.200:8000/webcam</string>
+    <string name="label_play">Play</string>
+    <string name="label_pause">Pause</string>
+    <string name="label_stop">Stop</string>
 
 </resources>

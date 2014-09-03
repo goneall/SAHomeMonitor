@@ -96,6 +96,14 @@ public class GcmIntentService extends IntentService {
         			sendMainIntent.putExtra(MainActivity.EXTRA_HOME_MONITOR_URL, homeMonitorUrl);
         		}
     		}
+    		
+    		String homeMonitorAudioUrl = extras.getString(MainActivity.EXTRA_HOME_MONITOR_AUDIO_URL);
+    		if (homeMonitorAudioUrl != null) {
+    			homeMonitorAudioUrl = homeMonitorAudioUrl.trim();
+        		if (!homeMonitorAudioUrl.isEmpty()) {
+        			sendMainIntent.putExtra(MainActivity.EXTRA_HOME_MONITOR_AUDIO_URL, homeMonitorAudioUrl);
+        		}
+    		}
 
         	String msg = extras.getString(MainActivity.EXTRA_MESSAGE_FROM_HOME);
         	if (msg != null) {

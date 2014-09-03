@@ -408,9 +408,9 @@ containing a value of this type.
         public static final int textborder=0x7f02001f;
     }
     public static final class id {
-        public static final int action_display_reg=0x7f070018;
-        public static final int action_settings=0x7f070017;
-        public static final int action_show_last_home_message=0x7f070019;
+        public static final int action_display_reg=0x7f070019;
+        public static final int action_settings=0x7f070018;
+        public static final int action_show_last_home_message=0x7f07001a;
         public static final int book_now=0x7f070010;
         public static final int buyButton=0x7f07000a;
         public static final int buy_now=0x7f07000f;
@@ -427,6 +427,7 @@ containing a value of this type.
         public static final int monochrome=0x7f070013;
         public static final int none=0x7f070000;
         public static final int normal=0x7f070001;
+        public static final int playpause=0x7f070017;
         public static final int production=0x7f070007;
         public static final int sandbox=0x7f070008;
         public static final int satellite=0x7f070002;
@@ -541,7 +542,10 @@ containing a value of this type.
         public static final int default_message=0x7f06001c;
         public static final int home_monitor_audio_url=0x7f060021;
         public static final int home_monitor_url=0x7f06001d;
+        public static final int label_pause=0x7f060023;
+        public static final int label_play=0x7f060022;
         public static final int label_registration_id=0x7f060020;
+        public static final int label_stop=0x7f060024;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */

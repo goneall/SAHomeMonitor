@@ -27,13 +27,20 @@ import com.google.android.gms.gcm.GoogleCloudMessaging;
 import com.sourceauditor.sahomemonitor.R;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.media.MediaPlayer.OnBufferingUpdateListener;
+import android.media.MediaPlayer.OnErrorListener;
+import android.media.MediaPlayer.OnPreparedListener;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -42,9 +49,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnPreparedListener, OnBufferingUpdateListener, OnErrorListener {
 	
     public static final String PROPERTY_REG_ID = "registration_id";
     public static final String PROPERTY_HOME_MONITOR_URL = "monitor_url";
@@ -56,6 +64,7 @@ public class MainActivity extends Activity {
 
 	public static final String EXTRA_MESSAGE_FROM_HOME = "com.sourceauditor.sahomemonitor.messagefromhome";
 	public static final String EXTRA_HOME_MONITOR_URL = "com.sourceauditor.sahomemonitor.homemonitorurl";
+	public static final String EXTRA_HOME_MONITOR_AUDIO_URL = "com.sourceauditor.sahomemonitor.homemonitoraudiourl";
     
 	public static final int DEFAULT_PLAYER_WIDTH = 640;
 	public static final int DEFAULT_PLAYER_HEIGHT = 480;
@@ -69,18 +78,147 @@ public class MainActivity extends Activity {
     Context context;
     String regid = "NOT SET";
 	private String lastHomeMessage = "No Message";
+	SharedPreferences prefs = null;
 	
 	private MediaPlayer audioPlayer = null;
+	private MjpegView mv = null;
+	private Button playPauseButton = null;
     
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		context = getApplicationContext();
+		prefs = getSAHomeMonitorPreferences(context);
 		setContentView(R.layout.activity_main);
+		mv = (MjpegView) findViewById(R.id.mjpegView);
+		audioPlayer = new MediaPlayer();
+		playPauseButton = (Button) findViewById(R.id.playpause);
+		playPauseButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				if (paused()) {
+					play();
+				} else {
+					pause();
+				}
+			}
+		});
+		
 		registerGcm();
 	}
 	
+	protected boolean paused() {
+		return playPauseButton.getText().equals(getString(R.string.label_play));
+	}
+	
+	protected void pause() {
+		pauseVideo();
+		pauseAudio();
+		playPauseButton.setText(getString(R.string.label_play));
+	}
+	
+	private void pauseAudio() {
+		audioPlayer.pause();
+	}
+
+	private void pauseVideo() {
+		if (mv != null && mv.isStreaming()) {
+			mv.stopPlayback();
+		}
+	}
+
+	protected void play() {
+		playVideo();
+		playAudio();
+		playPauseButton.setText(getString(R.string.label_pause));
+	}
+	
+	
+	private void playAudio() {
+		audioPlayer.stop();
+		audioPlayer.reset();
+		try {
+			audioPlayer.setDataSource(this, getAudioUri());
+			audioPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+			audioPlayer.setOnPreparedListener(this);
+			audioPlayer.setOnBufferingUpdateListener(this);
+			audioPlayer.setOnErrorListener(this);
+			audioPlayer.prepareAsync();
+		} catch (IllegalArgumentException e) {
+			logAndDisplayError("Illegal argument for audioPlayer");
+		} catch (SecurityException e) {
+			logAndDisplayError("Security error for audioPlayer");
+		} catch (IllegalStateException e) {
+			logAndDisplayError("Illegal state exception for audioPlayer");
+		} catch (IOException e) {
+			logAndDisplayError("IO Error for audio player: "+e.getMessage());
+		}
+	}
+	
+	private void logAndDisplayError(String msg) {
+		Log.e(TAG, msg);
+		AlertDialog.Builder adb = new AlertDialog.Builder(this);
+		adb.setTitle("Error");
+		adb.setMessage(msg)
+			.setCancelable(true)
+			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					dialog.cancel();
+				}
+				
+			})
+			.create()
+			.show();
+	}
+
+	private Uri getAudioUri() {
+		Intent intent = getIntent();
+		String homeAudioUrl = prefs.getString(PROPERTY_HOME_MONITOR_AUDIO_URL, getString(R.string.home_monitor_audio_url));
+		if (intent != null && intent.getAction().equals(ACTION_HOME_NOFICATION) && intent.getExtras() != null) {
+			String intentHomeMonitorAudioUrl = intent.getExtras().getString(EXTRA_HOME_MONITOR_AUDIO_URL);
+			if (intentHomeMonitorAudioUrl != null && !intentHomeMonitorAudioUrl.trim().isEmpty()) {
+				homeAudioUrl = intentHomeMonitorAudioUrl;
+				// add the last home monitor URL to the preferences
+				SharedPreferences.Editor editor = prefs.edit();
+			    editor.putString(PROPERTY_HOME_MONITOR_URL, intentHomeMonitorAudioUrl);
+			    editor.commit();
+			}
+		}
+		return Uri.parse(homeAudioUrl);
+	}
+
+	private void playVideo() {
+		int width = prefs.getInt(PROPERTY_PLAYER_WIDTH, DEFAULT_PLAYER_WIDTH);
+		int height = prefs.getInt(PROPERTY_PLAYER_HEIGHT, DEFAULT_PLAYER_HEIGHT);
+        if(mv != null){
+        	mv.setResolution(width, height);
+        	new DoRead(mv).execute(getHomeMonitorUrl());
+        }
+        else {
+        	Log.e(TAG, "MJeg Viewer is null - can not start display");
+        }
+	}
+
+	private String getHomeMonitorUrl() {
+		Intent intent = getIntent();
+		String homeMonitorUrl = prefs.getString(PROPERTY_HOME_MONITOR_URL, getString(R.string.home_monitor_url));
+		if (intent != null && intent.getAction().equals(ACTION_HOME_NOFICATION) && intent.getExtras() != null) {
+			String intentHomeMonitorUrl = intent.getExtras().getString(EXTRA_HOME_MONITOR_URL);
+			if (intentHomeMonitorUrl != null && !intentHomeMonitorUrl.trim().isEmpty()) {
+				homeMonitorUrl = intentHomeMonitorUrl;
+				// add the last home monitor URL to the preferences
+				SharedPreferences.Editor editor = prefs.edit();
+			    editor.putString(PROPERTY_HOME_MONITOR_URL, intentHomeMonitorUrl);
+			    editor.commit();
+			}
+		}
+		return homeMonitorUrl;
+	}
+
 	private void registerGcm() {
 		if (DONT_USE_GCM) {
 			return;
@@ -180,7 +318,6 @@ public class MainActivity extends Activity {
 	 *         registration ID.
 	 */
 	private String getRegistrationId(Context context) {
-	    final SharedPreferences prefs = getSAHomeMonitorPreferences(context);
 	    String registrationId = prefs.getString(PROPERTY_REG_ID, "");
 	    if (registrationId.isEmpty()) {
 	        Log.i(TAG, "Registration not found.");
@@ -286,50 +423,21 @@ public class MainActivity extends Activity {
 	    @Override
 	    protected void onResume() {
 	        super.onResume();
-			Intent intent = getIntent();
+	        play();
 			String homeMessage = getString(R.string.default_message);
-			final SharedPreferences prefs = getSAHomeMonitorPreferences(getContext());
-			String homeMonitorUrl = prefs.getString(PROPERTY_HOME_MONITOR_URL, getString(R.string.home_monitor_url));
-			if (intent != null && intent.getAction().equals(ACTION_HOME_NOFICATION) && intent.getExtras() != null) {
-				String intentMessage = intent.getExtras().getString(EXTRA_MESSAGE_FROM_HOME);
-				if (intentMessage != null &&!intentMessage.trim().isEmpty()) {
-					homeMessage = intentMessage;
-				}
-				String intentHomeMonitorUrl = intent.getExtras().getString(EXTRA_HOME_MONITOR_URL);
-				if (intentHomeMonitorUrl != null && !intentHomeMonitorUrl.trim().isEmpty()) {
-					homeMonitorUrl = intentHomeMonitorUrl;
-					// add the last home monitor URL to the preferences
-					SharedPreferences.Editor editor = prefs.edit();
-				    editor.putString(PROPERTY_HOME_MONITOR_URL, intentHomeMonitorUrl);
-				    editor.commit();
-				}
-			}
 			setMessageText(homeMessage);
 			setLastHomeMessage(homeMessage);
-
-			MjpegView mv = (MjpegView) findViewById(R.id.mjpegView); 
-			int width = prefs.getInt(PROPERTY_PLAYER_WIDTH, DEFAULT_PLAYER_WIDTH);
-			int height = prefs.getInt(PROPERTY_PLAYER_HEIGHT, DEFAULT_PLAYER_HEIGHT);
-	        if(mv != null){
-	        	mv.setResolution(width, height);
-	        	new DoRead(mv).execute(homeMonitorUrl);
-	        }
-	        else {
-	        	Log.e(TAG, "MJeg Viewer is null - can not start display");
-	        }
 	    }
 	    
 	    @Override
 		protected void onPause() {
 			super.onPause();
-			MjpegView mv = (MjpegView) findViewById(R.id.mjpegView); 
-			if (mv != null && mv.isStreaming()) {
-				mv.stopPlayback();
-			}
+			pause();
 	    }
 	    
 	    @Override
 	    protected void onDestroy() {
+	    	audioPlayer.stop();
 			MjpegView mv = (MjpegView) findViewById(R.id.mjpegView); 
 			if (mv != null) {
 				mv.freeCameraMemory();
@@ -343,8 +451,39 @@ public class MainActivity extends Activity {
 	    	}
 	    	super.onDestroy();
 	    }
-	    
-	public Context getContext() {
-		return this.context;
-	}
+
+		@Override
+		public boolean onError(MediaPlayer mp, int what, int extra) {
+		  
+			StringBuilder sb = new StringBuilder();
+			sb.append("Error playing Audio stream from home: ");
+			switch (what) {
+				case MediaPlayer.MEDIA_ERROR_NOT_VALID_FOR_PROGRESSIVE_PLAYBACK:
+					sb.append("Not Valid for Progressive Playback");
+					break;
+				case MediaPlayer.MEDIA_ERROR_SERVER_DIED:
+					sb.append("Server Died");
+					break;
+				case MediaPlayer.MEDIA_ERROR_UNKNOWN:
+					sb.append("Unknown");
+					break;
+				default:
+					sb.append(" Unknow error (");
+					sb.append(what);
+					sb.append(")");
+			}
+			sb.append(extra);
+			logAndDisplayError(sb.toString());
+			return true;
+		}
+
+		@Override
+		public void onBufferingUpdate(MediaPlayer mp, int percent) {
+			// TODO Add buffering update UI
+		}
+
+		@Override
+		public void onPrepared(MediaPlayer mp) {
+			audioPlayer.start();
+		}
 }
