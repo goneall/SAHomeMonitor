@@ -72,7 +72,7 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 	private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
     static final String TAG = "SAHomeMonitor";
     
-    private static boolean DONT_USE_GCM=true;	// set to true for debugging on emulator
+    private static boolean DONT_USE_GCM=false;	// set to true for debugging on emulator
     
     GoogleCloudMessaging gcm;
     Context context;
@@ -412,7 +412,20 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 	}
 
 	private void showRegistrationId() {
-		setMessageText(getString(R.string.label_registration_id) + this.regid);
+		AlertDialog.Builder adb = new AlertDialog.Builder(this);
+		adb.setTitle("Registration ID");
+		adb.setMessage((R.string.label_registration_id) + this.regid)
+			.setCancelable(true)
+			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					dialog.cancel();
+				}
+				
+			})
+			.create()
+			.show();
 	}
 
 	@Override

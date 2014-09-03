@@ -14,8 +14,9 @@
         android:background="@drawable/textborder"
         android:ems="10"
         android:hint="@string/default_message"
-        android:lines="5"
-        android:maxLines="5" >
+        android:lines="2"
+        android:maxLines="2"
+        android:textSize="20sp" >
 
     </TextView>
 
