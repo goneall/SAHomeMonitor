@@ -22,10 +22,13 @@ package com.sourceauditor.sahomemonitor;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 
 import android.app.IntentService;
+import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
@@ -39,6 +42,7 @@ import android.util.Log;
  */
 public class GcmIntentService extends IntentService {
     public static final int NOTIFICATION_ID = 1;
+    private static final boolean USE_NOTIFICATION = true;
     private NotificationManager mNotificationManager;
     NotificationCompat.Builder builder;
 
@@ -63,14 +67,21 @@ public class GcmIntentService extends IntentService {
 	             * not interested in, or that you don't recognize.
 	             */
 	            if (GoogleCloudMessaging.MESSAGE_TYPE_SEND_ERROR.equals(messageType)) {
-	                sendNotification("Send error: " + extras.toString());
+	                sendNotification("Send error: " + extras.toString(), extras);
 	            } else if (GoogleCloudMessaging.MESSAGE_TYPE_DELETED.equals(messageType)) {
-	                sendNotification("Deleted messages on server: " + extras.toString());
+	                sendNotification("Deleted messages on server: " + extras.toString(), extras);
 	            // If it's a regular GCM message, do some work.
 	            } else if (GoogleCloudMessaging.MESSAGE_TYPE_MESSAGE.equals(messageType)) {
 	                // Post notification of received message.
-	            	sendToMainActivity(extras);
-	 //               sendNotification("Received: " + extras.toString());
+		            	if (USE_NOTIFICATION) {
+		            	String msg = extras.getString(MainActivity.EXTRA_MESSAGE_FROM_HOME);
+		            	if (msg == null || msg.trim().isEmpty()) {
+		            		msg = "Home Alert (no message)";
+		            	}
+		            	sendNotification(msg, extras);
+	            	} else {
+		            	sendToMainActivity(extras);
+	            	}
 	                Log.i(TAG, "Received: " + extras.toString());
 	            }
 	        }	
@@ -80,20 +91,16 @@ public class GcmIntentService extends IntentService {
     	}
     }
     
-    /**
-     * Send the GCM message information to the MainActivity for display
-     * @param extras
-     */
-    private void sendToMainActivity(Bundle extras) {
-    	Intent sendMainIntent = new Intent(this, MainActivity.class);
-    	sendMainIntent.setAction(MainActivity.ACTION_HOME_NOFICATION);
-    	sendMainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    Intent buildIntentForMainActifity(Bundle extras) {
+    	Intent retval = new Intent(this, MainActivity.class);
+    	retval.setAction(MainActivity.ACTION_HOME_NOFICATION);
+    	retval.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
     	if (extras != null) {
     		String homeMonitorUrl = extras.getString(MainActivity.EXTRA_HOME_MONITOR_URL);
     		if (homeMonitorUrl != null) {
     			homeMonitorUrl = homeMonitorUrl.trim();
         		if (!homeMonitorUrl.isEmpty()) {
-        			sendMainIntent.putExtra(MainActivity.EXTRA_HOME_MONITOR_URL, homeMonitorUrl);
+        			retval.putExtra(MainActivity.EXTRA_HOME_MONITOR_URL, homeMonitorUrl);
         		}
     		}
     		
@@ -101,7 +108,7 @@ public class GcmIntentService extends IntentService {
     		if (homeMonitorAudioUrl != null) {
     			homeMonitorAudioUrl = homeMonitorAudioUrl.trim();
         		if (!homeMonitorAudioUrl.isEmpty()) {
-        			sendMainIntent.putExtra(MainActivity.EXTRA_HOME_MONITOR_AUDIO_URL, homeMonitorAudioUrl);
+        			retval.putExtra(MainActivity.EXTRA_HOME_MONITOR_AUDIO_URL, homeMonitorAudioUrl);
         		}
     		}
 
@@ -109,35 +116,48 @@ public class GcmIntentService extends IntentService {
         	if (msg != null) {
             	msg = msg.trim();
             	if (!msg.isEmpty()) {
-            		sendMainIntent.putExtra(MainActivity.EXTRA_MESSAGE_FROM_HOME, msg);
+            		retval.putExtra(MainActivity.EXTRA_MESSAGE_FROM_HOME, msg);
             	}   
         	}	
     	}
-    	startActivity(sendMainIntent);
+    	return retval;
+    }
+    
+    /**
+     * Send the GCM message information to the MainActivity for display
+     * @param extras
+     */
+    private void sendToMainActivity(Bundle extras) {    	
+    	startActivity(buildIntentForMainActifity(extras));
     }
 
     // Put the message into a notification and post it.
-    // This is just one simple example of what you might choose to do with
-    // a GCM message.
-    private void sendNotification(String msg) {
+    private void sendNotification(String msg, Bundle extras) {
         mNotificationManager = (NotificationManager)
                 this.getSystemService(Context.NOTIFICATION_SERVICE);
 
-        Intent notifyMainIntent = new Intent(this, MainActivity.class);
+        Intent notifyMainIntent = buildIntentForMainActifity(extras);
+
         // Figure out how to add extras for the URL and message
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0,
         		notifyMainIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
- //       .setSmallIcon(R.drawable.ic_stat_gcm)
-        //TODO: Add an icon
+        .setSmallIcon(R.drawable.ic_launcher)
         .setContentTitle("Home Monitor Notification")
         .setStyle(new NotificationCompat.BigTextStyle()
         .bigText(msg))
+        .setExtras(extras)
         .setContentText(msg);
 
         mBuilder.setContentIntent(contentIntent);
+        mBuilder.setPriority(Notification.PRIORITY_MAX);
+        mBuilder.setLights(0xFF0000, 500, 500);
+        long[] pattern = new long[] {0, 500, 0, 500, 0, 500, 0, 500, 0, 500};
+        mBuilder.setVibrate(pattern);
+        Uri soundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        mBuilder.setSound(soundUri);
         mNotificationManager.notify(NOTIFICATION_ID, mBuilder.build());
     }
 

@@ -28,7 +28,9 @@ import com.sourceauditor.sahomemonitor.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Fragment;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.TaskStackBuilder;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -36,6 +38,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.media.AudioManager;
+import android.media.AudioManager.OnAudioFocusChangeListener;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnBufferingUpdateListener;
 import android.media.MediaPlayer.OnErrorListener;
@@ -43,16 +46,15 @@ import android.media.MediaPlayer.OnPreparedListener;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.NotificationCompat;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends Activity implements OnPreparedListener, OnBufferingUpdateListener, OnErrorListener {
+public class MainActivity extends Activity implements OnPreparedListener, OnBufferingUpdateListener, OnErrorListener, OnAudioFocusChangeListener {
 	
     public static final String PROPERTY_REG_ID = "registration_id";
     public static final String PROPERTY_HOME_MONITOR_URL = "monitor_url";
@@ -83,7 +85,7 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 	private MediaPlayer audioPlayer = null;
 	private MjpegView mv = null;
 	private Button playPauseButton = null;
-    
+	AudioManager audioManager = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -92,7 +94,11 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 		prefs = getSAHomeMonitorPreferences(context);
 		setContentView(R.layout.activity_main);
 		mv = (MjpegView) findViewById(R.id.mjpegView);
+		audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 		audioPlayer = new MediaPlayer();
+		audioPlayer.setOnPreparedListener(this);
+		audioPlayer.setOnBufferingUpdateListener(this);
+		audioPlayer.setOnErrorListener(this);
 		playPauseButton = (Button) findViewById(R.id.playpause);
 		playPauseButton.setOnClickListener(new View.OnClickListener() {
 			
@@ -121,6 +127,7 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 	
 	private void pauseAudio() {
 		audioPlayer.pause();
+		audioManager.abandonAudioFocus(this);
 	}
 
 	private void pauseVideo() {
@@ -142,10 +149,12 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 		try {
 			audioPlayer.setDataSource(this, getAudioUri());
 			audioPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-			audioPlayer.setOnPreparedListener(this);
-			audioPlayer.setOnBufferingUpdateListener(this);
-			audioPlayer.setOnErrorListener(this);
+			int result = audioManager.requestAudioFocus(this, AudioManager.STREAM_MUSIC,
+				    AudioManager.AUDIOFOCUS_GAIN);
 			audioPlayer.prepareAsync();
+			if (result != AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+				logAndDisplayError("Audio in use by another app");
+			}
 		} catch (IllegalArgumentException e) {
 			logAndDisplayError("Illegal argument for audioPlayer");
 		} catch (SecurityException e) {
@@ -178,7 +187,8 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 	private Uri getAudioUri() {
 		Intent intent = getIntent();
 		String homeAudioUrl = prefs.getString(PROPERTY_HOME_MONITOR_AUDIO_URL, getString(R.string.home_monitor_audio_url));
-		if (intent != null && intent.getAction().equals(ACTION_HOME_NOFICATION) && intent.getExtras() != null) {
+		if (intent != null && intent.getAction() != null &&
+				intent.getAction().equals(ACTION_HOME_NOFICATION) && intent.getExtras() != null) {
 			String intentHomeMonitorAudioUrl = intent.getExtras().getString(EXTRA_HOME_MONITOR_AUDIO_URL);
 			if (intentHomeMonitorAudioUrl != null && !intentHomeMonitorAudioUrl.trim().isEmpty()) {
 				homeAudioUrl = intentHomeMonitorAudioUrl;
@@ -206,7 +216,8 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 	private String getHomeMonitorUrl() {
 		Intent intent = getIntent();
 		String homeMonitorUrl = prefs.getString(PROPERTY_HOME_MONITOR_URL, getString(R.string.home_monitor_url));
-		if (intent != null && intent.getAction().equals(ACTION_HOME_NOFICATION) && intent.getExtras() != null) {
+		if (intent != null && intent.getAction() != null &&
+				intent.getAction().equals(ACTION_HOME_NOFICATION) && intent.getExtras() != null) {
 			String intentHomeMonitorUrl = intent.getExtras().getString(EXTRA_HOME_MONITOR_URL);
 			if (intentHomeMonitorUrl != null && !intentHomeMonitorUrl.trim().isEmpty()) {
 				homeMonitorUrl = intentHomeMonitorUrl;
@@ -217,6 +228,20 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 			}
 		}
 		return homeMonitorUrl;
+	}
+	
+	private String getHomeMessage() {
+		Intent intent = getIntent();
+		String homeMessage = getString(R.string.default_message);
+		if (intent != null && intent.getAction() != null &&
+				intent.getAction().equals(ACTION_HOME_NOFICATION) && intent.getExtras() != null) {
+			String intentHomeMessage = intent.getExtras().getString(EXTRA_MESSAGE_FROM_HOME);
+			if (intentHomeMessage != null && !intentHomeMessage.trim().isEmpty()) {
+				homeMessage = intentHomeMessage;
+				this.lastHomeMessage = homeMessage;
+			}
+		}
+		return homeMessage;
 	}
 
 	private void registerGcm() {
@@ -283,10 +308,7 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 			
 	        @Override
 	        protected void onPostExecute(String result) {
-				TextView messageText = (TextView) findViewById(R.id.messageFromHomeText);
-				if (messageText != null) {
-					messageText.setText(result);
-				}
+				showRegistrationId();
 	        }
 
 	    }.execute(null, null, null);
@@ -384,11 +406,21 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 		} else if (id == R.id.action_show_last_home_message) {
 			showLastHomeMessage();
 			return true;
+		} else if (id == R.id.action_speaker) {
+			audioManager.setMode(AudioManager.STREAM_MUSIC);
+			if (item.isChecked()) {
+				audioManager.setSpeakerphoneOn(false);
+				item.setChecked(false);
+			} else {
+				audioManager.setSpeakerphoneOn(true);
+				item.setChecked(true);
+			}
+			
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
-	  private void showLastHomeMessage() {
+
+	private void showLastHomeMessage() {
 		setMessageText(this.lastHomeMessage);
 	}
 
@@ -414,7 +446,7 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 	private void showRegistrationId() {
 		AlertDialog.Builder adb = new AlertDialog.Builder(this);
 		adb.setTitle("Registration ID");
-		adb.setMessage((R.string.label_registration_id) + this.regid)
+		adb.setMessage(getString(R.string.label_registration_id) + this.regid)
 			.setCancelable(true)
 			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 
@@ -437,7 +469,7 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 	    protected void onResume() {
 	        super.onResume();
 	        play();
-			String homeMessage = getString(R.string.default_message);
+			String homeMessage = getHomeMessage();
 			setMessageText(homeMessage);
 			setLastHomeMessage(homeMessage);
 	    }
@@ -450,12 +482,16 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 	    
 	    @Override
 	    protected void onDestroy() {
-	    	audioPlayer.stop();
-			MjpegView mv = (MjpegView) findViewById(R.id.mjpegView); 
+	    	if (audioPlayer != null) {
+		    	audioPlayer.stop();
+		    	audioPlayer.release();
+		    	audioPlayer = null;
+	    	}
+	    	
 			if (mv != null) {
 				mv.freeCameraMemory();
 			}
-			super.onDestroy();
+			
 	    	// Not sure if the following is required.  The JavaDocs state close should be called, however,
 	    	// there is no close in any of the Google example close
 	    	if (this.gcm != null) {
@@ -498,5 +534,36 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 		@Override
 		public void onPrepared(MediaPlayer mp) {
 			audioPlayer.start();
+		}
+
+		@Override
+		public void onAudioFocusChange(int focusChange) {
+		    switch (focusChange) {
+	        case AudioManager.AUDIOFOCUS_GAIN:
+	        	if (paused()) {
+	        		play();
+	        	} else {
+	        		audioPlayer.setVolume(1.0f, 1.0f);
+	        	}
+	            break;
+
+	        case AudioManager.AUDIOFOCUS_LOSS:
+	            // Lost focus for an unbounded amount of time: pause playback
+	            pause();
+	            break;
+
+	        case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT:
+	            pause();
+	            break;
+
+	        case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK:
+	            // Lost focus for a short time, but it's ok to keep playing
+	            // at an attenuated level
+	        	if (!paused()) {
+	        		audioPlayer.setVolume(0.1f, 0.1f);
+		           
+	        	}
+	        	 break;
+		    }
 		}
 }

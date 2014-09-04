@@ -12,5 +12,6 @@
     <string name="label_play">Play</string>
     <string name="label_pause">Pause</string>
     <string name="label_stop">Stop</string>
+    <string name="label_speaker">Speaker</string>
 
 </resources>

@@ -15,5 +15,11 @@
         android:title="@string/action_last_home_message" 
         android:showAsAction="never">
     </item>
+    <item android:id="@+id/action_speaker" 
+        android:title="@string/label_speaker" 
+        android:checked="false" 
+        android:checkable="true" 
+        android:showAsAction="never">       
+    </item>
     
 </menu>

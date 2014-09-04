@@ -411,6 +411,7 @@ containing a value of this type.
         public static final int action_display_reg=0x7f070019;
         public static final int action_settings=0x7f070018;
         public static final int action_show_last_home_message=0x7f07001a;
+        public static final int action_speaker=0x7f07001b;
         public static final int book_now=0x7f070010;
         public static final int buyButton=0x7f07000a;
         public static final int buy_now=0x7f07000f;
@@ -545,6 +546,7 @@ containing a value of this type.
         public static final int label_pause=0x7f060023;
         public static final int label_play=0x7f060022;
         public static final int label_registration_id=0x7f060020;
+        public static final int label_speaker=0x7f060025;
         public static final int label_stop=0x7f060024;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
