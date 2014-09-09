@@ -11,6 +11,7 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
@@ -205,7 +206,11 @@ public class MjpegView extends SurfaceView implements SurfaceHolder.Callback {
             if(thread==null){
             	thread = new MjpegViewThread(holder, saved_context);
             }
-            thread.start();    		
+            if (!thread.isAlive()) {
+            	thread.start();    		
+            } else {
+            	Log.w(TAG, "Trying to start an already started MjpegViewThread");
+            }
         }
     }
     

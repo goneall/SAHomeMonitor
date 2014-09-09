@@ -93,12 +93,8 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 		context = getApplicationContext();
 		prefs = getSAHomeMonitorPreferences(context);
 		setContentView(R.layout.activity_main);
-		mv = (MjpegView) findViewById(R.id.mjpegView);
 		audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-		audioPlayer = new MediaPlayer();
-		audioPlayer.setOnPreparedListener(this);
-		audioPlayer.setOnBufferingUpdateListener(this);
-		audioPlayer.setOnErrorListener(this);
+
 		playPauseButton = (Button) findViewById(R.id.playpause);
 		playPauseButton.setOnClickListener(new View.OnClickListener() {
 			
@@ -142,18 +138,41 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 		playPauseButton.setText(getString(R.string.label_pause));
 	}
 	
+	private void stopAudio() {
+		if (audioPlayer != null) {
+			audioPlayer.stop();
+			audioPlayer.reset();
+			audioPlayer.release();
+			audioPlayer = null;
+		}
+	}
+	
+	private void stopVideo() {
+		if (mv != null) {
+			mv.freeCameraMemory();
+			mv = null;			
+		}
+	}
 	
 	private void playAudio() {
-		audioPlayer.stop();
-		audioPlayer.reset();
+		if (audioPlayer == null) {
+			audioPlayer = new MediaPlayer();
+			audioPlayer.setOnPreparedListener(this);
+			audioPlayer.setOnBufferingUpdateListener(this);
+			audioPlayer.setOnErrorListener(this);
+		} else {
+			audioPlayer.stop();
+			audioPlayer.reset();
+		}
 		try {
 			audioPlayer.setDataSource(this, getAudioUri());
 			audioPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
 			int result = audioManager.requestAudioFocus(this, AudioManager.STREAM_MUSIC,
 				    AudioManager.AUDIOFOCUS_GAIN);
-			audioPlayer.prepareAsync();
 			if (result != AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
 				logAndDisplayError("Audio in use by another app");
+			} else {
+				audioPlayer.prepareAsync();
 			}
 		} catch (IllegalArgumentException e) {
 			logAndDisplayError("Illegal argument for audioPlayer");
@@ -204,13 +223,11 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 	private void playVideo() {
 		int width = prefs.getInt(PROPERTY_PLAYER_WIDTH, DEFAULT_PLAYER_WIDTH);
 		int height = prefs.getInt(PROPERTY_PLAYER_HEIGHT, DEFAULT_PLAYER_HEIGHT);
-        if(mv != null){
-        	mv.setResolution(width, height);
-        	new DoRead(mv).execute(getHomeMonitorUrl());
-        }
-        else {
-        	Log.e(TAG, "MJeg Viewer is null - can not start display");
-        }
+		if (mv == null) {
+			mv = (MjpegView) findViewById(R.id.mjpegView);
+		}
+        mv.setResolution(width, height);
+        new DoRead(mv).execute(getHomeMonitorUrl());
 	}
 
 	private String getHomeMonitorUrl() {
@@ -407,11 +424,13 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 			showLastHomeMessage();
 			return true;
 		} else if (id == R.id.action_speaker) {
-			audioManager.setMode(AudioManager.STREAM_MUSIC);
-			if (item.isChecked()) {
+			int audioMode = audioManager.getMode();
+			if (audioManager.isSpeakerphoneOn()) {
+				audioManager.setMode(AudioManager.MODE_NORMAL);
 				audioManager.setSpeakerphoneOn(false);
 				item.setChecked(false);
 			} else {
+				audioManager.setMode(AudioManager.MODE_NORMAL);
 				audioManager.setSpeakerphoneOn(true);
 				item.setChecked(true);
 			}
@@ -480,17 +499,23 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 			pause();
 	    }
 	    
+	    private void stop() {
+	    	stopVideo();
+	    	stopAudio();
+	    }
+	    
+	    @Override
+	    protected void onStop() {
+	    	super.onStop();
+	    	stop();
+	    }
+	    
+	    
 	    @Override
 	    protected void onDestroy() {
-	    	if (audioPlayer != null) {
-		    	audioPlayer.stop();
-		    	audioPlayer.release();
-		    	audioPlayer = null;
-	    	}
+	    	stopAudio();
 	    	
-			if (mv != null) {
-				mv.freeCameraMemory();
-			}
+	    	stopVideo();
 			
 	    	// Not sure if the following is required.  The JavaDocs state close should be called, however,
 	    	// there is no close in any of the Google example close
@@ -528,12 +553,18 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 
 		@Override
 		public void onBufferingUpdate(MediaPlayer mp, int percent) {
-			// TODO Add buffering update UI
+			if (percent >= 100) {
+				this.playPauseButton.setText(getString(R.string.label_pause));
+			} else if (percent >= 0 && percent < 100){
+				String percentStr = String.valueOf(percent);
+				this.playPauseButton.setText(percentStr + "%");
+			}
 		}
 
 		@Override
 		public void onPrepared(MediaPlayer mp) {
-			audioPlayer.start();
+			this.playPauseButton.setText(getString(R.string.label_pause));
+			mp.start();
 		}
 
 		@Override
