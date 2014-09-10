@@ -86,6 +86,7 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 	private MjpegView mv = null;
 	private Button playPauseButton = null;
 	AudioManager audioManager = null;
+	private boolean pauseBeforePlaying;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -122,7 +123,11 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 	}
 	
 	private void pauseAudio() {
-		audioPlayer.pause();
+		if (audioPlayer.isPlaying()) {
+			audioPlayer.pause();
+		} else {
+			pauseBeforePlaying = true;
+		}
 		audioManager.abandonAudioFocus(this);
 	}
 
@@ -143,6 +148,7 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 			audioPlayer.stop();
 			audioPlayer.reset();
 			audioPlayer.release();
+			pauseBeforePlaying = false;
 			audioPlayer = null;
 		}
 	}
@@ -172,6 +178,7 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 			if (result != AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
 				logAndDisplayError("Audio in use by another app");
 			} else {
+				pauseBeforePlaying = false;
 				audioPlayer.prepareAsync();
 			}
 		} catch (IllegalArgumentException e) {
@@ -424,7 +431,6 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 			showLastHomeMessage();
 			return true;
 		} else if (id == R.id.action_speaker) {
-			int audioMode = audioManager.getMode();
 			if (audioManager.isSpeakerphoneOn()) {
 				audioManager.setMode(AudioManager.MODE_NORMAL);
 				audioManager.setSpeakerphoneOn(false);
@@ -465,7 +471,7 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 	private void showRegistrationId() {
 		AlertDialog.Builder adb = new AlertDialog.Builder(this);
 		adb.setTitle("Registration ID");
-		adb.setMessage(getString(R.string.label_registration_id) + this.regid)
+		adb.setMessage(this.regid)
 			.setCancelable(true)
 			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 
@@ -563,8 +569,14 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 
 		@Override
 		public void onPrepared(MediaPlayer mp) {
-			this.playPauseButton.setText(getString(R.string.label_pause));
-			mp.start();
+			if (!mp.isPlaying() && !pauseBeforePlaying) {
+				try {
+					mp.start();
+					this.playPauseButton.setText(getString(R.string.label_pause));
+				} catch (Exception e) {
+					Log.e(TAG, "Error trying to start media player: "+e.getMessage());
+				}
+			}
 		}
 
 		@Override
