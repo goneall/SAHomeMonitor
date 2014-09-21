@@ -13,5 +13,8 @@
     <string name="label_pause">Pause</string>
     <string name="label_stop">Stop</string>
     <string name="label_speaker">Speaker</string>
+    <string name="action_show_home_monitor_url">Show Home Monitor URL</string>
+    <string name="title_show_reg">Registration ID</string>
+    <string name="title_show_home_monitor_url">Home Monitor URL</string>
 
 </resources>

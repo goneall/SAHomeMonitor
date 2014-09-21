@@ -441,6 +441,9 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 				item.setChecked(true);
 			}
 			
+		} else if (id == R.id.action_show_home_monitor_url) {
+			showUrl();
+			return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}
@@ -467,11 +470,11 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 	public String getLastHomeMessage() {
 		return this.lastHomeMessage;
 	}
-
-	private void showRegistrationId() {
+	
+	private void showDialog(String title, String msg) {
 		AlertDialog.Builder adb = new AlertDialog.Builder(this);
-		adb.setTitle("Registration ID");
-		adb.setMessage(this.regid)
+		adb.setTitle(title);
+		adb.setMessage(msg)
 			.setCancelable(true)
 			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 
@@ -483,6 +486,14 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 			})
 			.create()
 			.show();
+	}
+
+	private void showRegistrationId() {
+		showDialog(getString(R.string.title_show_reg), this.regid);
+	}
+	
+	private void showUrl() {
+		showDialog(getString(R.string.title_show_home_monitor_url), this.getHomeMonitorUrl());
 	}
 
 	@Override

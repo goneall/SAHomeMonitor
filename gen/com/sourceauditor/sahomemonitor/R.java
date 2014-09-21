@@ -410,6 +410,7 @@ containing a value of this type.
     public static final class id {
         public static final int action_display_reg=0x7f070019;
         public static final int action_settings=0x7f070018;
+        public static final int action_show_home_monitor_url=0x7f07001c;
         public static final int action_show_last_home_message=0x7f07001a;
         public static final int action_speaker=0x7f07001b;
         public static final int book_now=0x7f070010;
@@ -449,6 +450,7 @@ containing a value of this type.
     public static final class string {
         public static final int action_last_home_message=0x7f06001f;
         public static final int action_settings=0x7f06001b;
+        public static final int action_show_home_monitor_url=0x7f060026;
         public static final int action_show_reg=0x7f06001e;
         public static final int app_name=0x7f06001a;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
@@ -548,6 +550,8 @@ containing a value of this type.
         public static final int label_registration_id=0x7f060020;
         public static final int label_speaker=0x7f060025;
         public static final int label_stop=0x7f060024;
+        public static final int title_show_home_monitor_url=0x7f060028;
+        public static final int title_show_reg=0x7f060027;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */
