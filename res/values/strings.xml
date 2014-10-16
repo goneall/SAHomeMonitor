@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">SAHomeMonitor</string>
+    <string name="app_name">Home Monitor</string>
     <string name="action_settings">Settings</string>
     <string name="default_message">no message from home</string>
     <string name="home_monitor_url">http://24.6.171.151:8081</string>
