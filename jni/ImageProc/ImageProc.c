@@ -216,7 +216,7 @@ void processimage (const void *p, int l)
 
 	row_stride = mycinfo.image_width * mycinfo.num_components;
 
-	if(rgb == NULL){
+	if(rgb == NULL || IMG_WIDTH == -1){
 		IMG_WIDTH=mycinfo.image_width;
 		IMG_HEIGHT=mycinfo.image_height;
 		rgb = (int *)malloc(sizeof(int) * (IMG_WIDTH*IMG_HEIGHT));

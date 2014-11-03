@@ -144,7 +144,7 @@ public class GcmIntentService extends IntentService {
 
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
-        .setSmallIcon(R.drawable.ic_launcher)
+        .setSmallIcon(R.drawable.home_small)
         .setContentTitle("Home Monitor Notification")
         .setStyle(new NotificationCompat.BigTextStyle()
         .bigText(msg))
