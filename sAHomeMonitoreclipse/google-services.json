@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "626044052501",
+    "firebase_url": "https://sahomemonitor.firebaseio.com",
+    "project_id": "sahomemonitor",
+    "storage_bucket": "sahomemonitor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626044052501:android:8a3af854461f847b",
+        "android_client_info": {
+          "package_name": "com.sourceauditor.sahomemonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626044052501-do73ioilbbovtjkq24ojpid2fqjo12gc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sourceauditor.sahomemonitor",
+            "certificate_hash": "c92beb457249e3720cc2a6ad6799b0d16c2eb428"
+          }
+        },
+        {
+          "client_id": "626044052501-l6s1egqqftqpahdvlej961gs0orkrsbk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPBtq44w_8-OBtCDITPv1Ozfse0JBjvO4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626044052501-l6s1egqqftqpahdvlej961gs0orkrsbk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

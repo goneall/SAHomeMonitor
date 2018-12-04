@@ -1,0 +1,23 @@
+{
+  "buildFiles": [
+    "C:\\Users\\gary\\git\\SAHomeMonitor\\sAHomeMonitoreclipse\\src\\main\\jni\\Android.mk",
+    "C:\\Users\\gary\\git\\SAHomeMonitor\\sAHomeMonitoreclipse\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\gary\\AppData\\Local\\Android\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Users\\gary\\git\\SAHomeMonitor\\sAHomeMonitoreclipse\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Users\\gary\\git\\SAHomeMonitor\\sAHomeMonitoreclipse\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Users/gary/git/SAHomeMonitor/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Users\\gary\\git\\SAHomeMonitor\\sAHomeMonitoreclipse\\build\\intermediates\\ndkBuild\\debug\\lib clean"
+  ],
+  "libraries": {
+    "jpeg-debug-x86_64": {
+      "artifactName": "jpeg",
+      "buildCommand": "C:\\Users\\gary\\AppData\\Local\\Android\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Users\\gary\\git\\SAHomeMonitor\\sAHomeMonitoreclipse\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Users\\gary\\git\\SAHomeMonitor\\sAHomeMonitoreclipse\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Users/gary/git/SAHomeMonitor/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Users\\gary\\git\\SAHomeMonitor\\sAHomeMonitoreclipse\\build\\intermediates\\ndkBuild\\debug\\lib C:/Users/gary/git/SAHomeMonitor/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/x86_64/libjpeg.a",
+      "abi": "x86_64",
+      "output": "C:\\Users\\gary\\git\\SAHomeMonitor\\sAHomeMonitoreclipse\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86_64\\libjpeg.a"
+    },
+    "ImageProc-debug-x86_64": {
+      "artifactName": "ImageProc",
+      "buildCommand": "C:\\Users\\gary\\AppData\\Local\\Android\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Users\\gary\\git\\SAHomeMonitor\\sAHomeMonitoreclipse\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Users\\gary\\git\\SAHomeMonitor\\sAHomeMonitoreclipse\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Users/gary/git/SAHomeMonitor/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Users\\gary\\git\\SAHomeMonitor\\sAHomeMonitoreclipse\\build\\intermediates\\ndkBuild\\debug\\lib C:/Users/gary/git/SAHomeMonitor/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/x86_64/libImageProc.so",
+      "abi": "x86_64",
+      "output": "C:\\Users\\gary\\git\\SAHomeMonitor\\sAHomeMonitoreclipse\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86_64\\libImageProc.so"
+    }
+  }
+}

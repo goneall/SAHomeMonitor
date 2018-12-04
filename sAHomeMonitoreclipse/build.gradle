@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        applicationId "com.sourceauditor.sahomemonitor"
+        minSdkVersion 21
+        targetSdkVersion 27
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path file('src/main/jni/Android.mk')
+        }
+    }
+}
+ext {
+    supportLibraryVersion = '27.1.1'
+}
+
+dependencies {
+    implementation "com.android.support:support-v4:$supportLibraryVersion"
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation "com.google.firebase:firebase-messaging:17.3.4"
+    implementation 'com.eatthepath:java-otp:0.1.0'
+    implementation 'commons-codec:commons-codec:1.11'
+}
+apply plugin: 'com.google.gms.google-services'
