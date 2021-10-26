@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SAHomeMonitor.iml" filepath="$PROJECT_DIR$/SAHomeMonitor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sAHomeMonitoreclipse/sAHomeMonitoreclipse.iml" filepath="$PROJECT_DIR$/sAHomeMonitoreclipse/sAHomeMonitoreclipse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sAHomeMonitoreclipse/SAHomeMonitor.sAHomeMonitoreclipse.iml" filepath="$PROJECT_DIR$/.idea/modules/sAHomeMonitoreclipse/SAHomeMonitor.sAHomeMonitoreclipse.iml" />
     </modules>
   </component>
 </project>

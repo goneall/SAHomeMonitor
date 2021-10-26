@@ -4,26 +4,7 @@
             "outputFile": "C:\\Users\\gary\\git\\SAHomeMonitor\\sAHomeMonitoreclipse\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\gary\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\e3548a3ba5f91f4566379cf6b4fb5b8e\\res\\values-v21\\values-v21.xml",
-                    "from": {
-                        "startLines": "2,5,8,11",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,223,386,554",
-                        "endLines": "4,7,10,13",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "218,381,549,716"
-                    },
-                    "to": {
-                        "startLines": "8,11,15,19",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "596,764,1053,1349",
-                        "endLines": "10,13,17,21",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "759,922,1216,1511"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\gary\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\51e8a5979406ff4a596b79cd234619b6\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\gary\\.gradle\\caches\\transforms-2\\files-2.1\\23b5713e7d39f369a54c844aa233b1f0\\support-compat-27.1.1\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -39,6 +20,25 @@
                         "endLines": "2,3,4,5,6,7,14,18,24,29",
                         "endColumns": "103,63,66,63,115,125,125,127,12,12",
                         "endOffsets": "154,218,285,349,465,591,1048,1344,1683,2021"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\gary\\.gradle\\caches\\transforms-2\\files-2.1\\391c9d060c3b59ec3bafd6bac06a3ce7\\support-media-compat-27.1.1\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,223,386,554",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "218,381,549,716"
+                    },
+                    "to": {
+                        "startLines": "8,11,15,19",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "596,764,1053,1349",
+                        "endLines": "10,13,17,21",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "759,922,1216,1511"
                     }
                 }
             ]

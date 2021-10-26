@@ -21,6 +21,7 @@ android {
             path file('src/main/jni/Android.mk')
         }
     }
+    ndkVersion '20.0.5594570'
 }
 ext {
     supportLibraryVersion = '27.1.1'
@@ -28,6 +29,8 @@ ext {
 
 dependencies {
     implementation "com.android.support:support-v4:$supportLibraryVersion"
+    implementation platform('com.google.firebase:firebase-bom:28.4.2')
+    implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-core:16.0.1'
     implementation "com.google.firebase:firebase-messaging:17.3.4"
     implementation 'com.eatthepath:java-otp:0.1.0'
