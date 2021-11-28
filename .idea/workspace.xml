@@ -7,7 +7,7 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -16,389 +16,146 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18c79cad-5c72-4cce-8cbc-f208aae50fd0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_datatransport_transport_api_3_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_datatransport_transport_backend_cct_3_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_datatransport_transport_runtime_3_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_17_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_cloud_messaging_16_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_19_0_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_api_19_0_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_19_0_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_impl_19_0_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_19_0_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_api_19_0_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_17_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_17_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_19_0_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_annotations_16_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_20_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_components_17_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_19_0_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_datatransport_18_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_encoders_17_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_encoders_json_18_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_17_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_installations_17_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_installations_interop_17_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_19_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_22_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator-enh.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/sAHomeMonitoreclipse/SAHomeMonitor.sAHomeMonitoreclipse.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/jarAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_android_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_common_1_1_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_common_1_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_27_1_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_27_1_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_27_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_eatthepath_java_otp_0_1_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_eatthepath_java_otp_0_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_15_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_16_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_16_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_16_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_16_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_16_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_16_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_impl_16_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_16_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_16_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_17_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_16_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_17_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_impl_16_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_17_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_common_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_27_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_cloud_messaging_16_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_19_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_api_19_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_19_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_impl_19_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_19_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_api_19_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_19_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_19_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_22_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/sAHomeMonitoreclipse/SAHomeMonitor.sAHomeMonitoreclipse.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/sAHomeMonitoreclipse/SAHomeMonitor.sAHomeMonitoreclipse.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SAHomeMonitor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SAHomeMonitor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/arm64-v8a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/arm64-v8a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/arm64-v8a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/arm64-v8a/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/arm64-v8a/ndkBuild_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/arm64-v8a/ndkBuild_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/arm64-v8a/ndkBuild_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/arm64-v8a/ndkBuild_build_output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/ndkBuild_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/ndkBuild_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/x86/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/x86/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/x86/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/x86/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/x86/ndkBuild_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/x86/ndkBuild_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/x86/ndkBuild_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/x86/ndkBuild_build_output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/x86_64/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/x86_64/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/x86_64/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/x86_64/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/x86_64/ndkBuild_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/debug/x86_64/ndkBuild_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/arm64-v8a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/arm64-v8a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/arm64-v8a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/arm64-v8a/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/arm64-v8a/ndkBuild_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/arm64-v8a/ndkBuild_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/armeabi-v7a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/armeabi-v7a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/armeabi-v7a/ndkBuild_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/armeabi-v7a/ndkBuild_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/x86/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/x86/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/x86/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/x86/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/x86/ndkBuild_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/x86/ndkBuild_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/x86_64/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/x86_64/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/x86_64/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/x86_64/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/x86_64/ndkBuild_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/.externalNativeBuild/ndkBuild/release/x86_64/ndkBuild_build_command.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/sourceauditor/sahomemonitor/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/sourceauditor/sahomemonitor/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/generated/res/google-services/debug/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/generated/res/google-services/debug/values/values.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/generated/source/buildConfig/debug/com/sourceauditor/sahomemonitor/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/generated/source/buildConfig/debug/com/sourceauditor/sahomemonitor/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-af.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-af.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-am.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-am.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ar.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ar.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-as.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-as.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-az.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-az.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-b+sr+Latn.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-b+sr+Latn.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-be.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-be.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-bg.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-bg.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-bn.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-bn.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-bs.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-bs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ca.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ca.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-cs.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-cs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-da.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-da.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-de.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-el.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-el.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-en-rAU.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-en-rAU.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-en-rGB.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-en-rGB.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-en-rIN.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-en-rIN.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-es-rUS.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-es-rUS.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-es.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-es.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-et.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-et.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-eu.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-eu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-fa.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-fi.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-fi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-fr-rCA.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-fr-rCA.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-gl.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-gl.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-gu.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-gu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-hi.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-hi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-hr.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-hr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-hu.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-hu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-hy.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-hy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-in.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-in.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-is.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-is.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-it.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-it.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-iw.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-iw.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ja.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ka.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ka.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-kk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-km.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-km.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-kn.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-kn.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ko.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ko.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ky.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ky.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-lo.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-lo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-lt.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-lt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-lv.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-lv.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-mk.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-mk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ml.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ml.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-mn.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-mn.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-mr.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-mr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ms.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ms.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-my.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-my.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-nb.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-nb.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ne.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ne.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-nl.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-nl.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-or.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-or.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-pa.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-pa.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-pl.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-pl.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-port.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-port.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-pt-rBR.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-pt-rBR.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-pt-rPT.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-pt-rPT.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-pt.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-pt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ro.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ro.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-si.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-si.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-sk.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-sk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-sl.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-sl.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-sq.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-sq.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-sr.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-sr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-sv.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-sv.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-sw.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-sw.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ta.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ta.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-te.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-te.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-th.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-th.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-tl.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-tl.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-tr.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-tr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-uk.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-uk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ur.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-ur.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-uz.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-uz.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-v11.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-v11.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-v14.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-v14.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-v16.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-v16.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-v21.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-v21.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-v24.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-v24.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-vi.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-vi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-w820dp-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-w820dp-v13.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-zh-rCN.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-zh-rCN.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-zh-rHK.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-zh-rHK.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-zh-rTW.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-zh-rTW.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-zu.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values-zu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/multi-v2/values.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/build-info/debug/build-info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/build-info/debug/build-info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/compatible_screen_manifest/debug/createDebugCompatibleScreenManifests/out/output.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+ZJfAxbykHG8ccparfJF_65SAH4=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+yotvmlfVNRcRXYobr4CJ7EvgBc=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/2+qAgtCYd3362aDuwDVSoKuD4zo=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/7Vusx8RLi1RrAyCmmRywukLg1dc=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/7eOhM55+xh8fWhjJCGon7oQFMpE=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/8ExLcEZXd9AbCOQCU1JqEL7pRAo=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/DParXTD3j9BigqXjK9j6ixwrVns=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Hqo5kLT8FJFUkvCwTko0_yZRZNQ=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/JlU77LYAzjP0xu+wo2ZQ3kGN3y0=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/K3jsUWmFan_cR7um6EWr2FOvsOY=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/M+K99h5iE+r9djKxBMHteDuXScE=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/QDxyyJCqllSG_mscf4phvKDijSs=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/RPlEDndIJdw4klg3aB8XaoIj2DQ=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/SnIKJvLcqiQg0z5hZFTdUnxbBMg=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ZlJSR93TagPJ_54yvWaqG4r4kMg=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/_DVNJi81jcrAScQVpyv72LlRQVc=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/_lHQ2Wy4rmpYVUoreUYaDmo546I=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/_oybKwY1GJgntQLIbpcVfIvDr0o=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/jhQClBrLitziYaXM12pHS9x+9KE=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/lglKYOPEISz0pw1OSUGHynZnHPE=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ls0er52XLNFNrAb5GnoqGHLwV9I=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/mmIMzqHQ5sD8XenN9waXok3QZw4=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/srNmM4EYuKUyC6eLg907+P1d7cg=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/xLLEm1Z0QsZBko+8AxT9MYkT6xs=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ze1NC2DQJpzB85_4+AY_qjQAF1U=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/ir_slices/debug/package_slice_2/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/ir_slices/debug/package_slice_2/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/3rhAhY9C0hNll80_2027hdvSqhw=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/96DkG7c3BidqcSC_y8A8TwcI5XU=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/S1IUur5zOJi8u5wtEvkRo73tU20=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/fmpGdWqVs6xjsrhmhD4zUPRCCtM=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/yqOnQf8EXckDz29uIh19R4k57zY=" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/A9bkwTMo_79YmeWkC6pPoeiaq3k=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/XCeGBAcRcRdkk5HBUag4o1_RW+U=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_merged_manifests/debug/processDebugManifest/instant-run/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_merged_manifests/debug/processDebugManifest/instant-run/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_0/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_0/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_1/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_1/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_2/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_2/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_3/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_3/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_4/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_4/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_5/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_5/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_6/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_6/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_7/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_7/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_8/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_8/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_9/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/instant_run_split_apk_resources/debug/instantRunSplitApkResourcesDebug/out/slice_9/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/manifest-checker/debug/manifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/manifest-checker/debug/manifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/merged_manifests/debug/processDebugManifest/merged/output.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/color_common_google_signin_btn_text_dark.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/color_common_google_signin_btn_text_light.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/color_common_google_signin_btn_tint.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_full_open_on_phone.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_disabled_color_18.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_standard_color_18.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi_home.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi_home.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi_textborder.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-hdpi_textborder.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi-v4_googleg_disabled_color_18.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi-v4_googleg_standard_color_18.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi_home.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi_home.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi_textborder.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-mdpi_textborder.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-v21_notification_action_background.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_full_open_on_phone.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi-v4_googleg_disabled_color_18.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi-v4_googleg_standard_color_18.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi_home.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi_home.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_standard_color_18.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xxhdpi_home.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xxhdpi_home.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xxhdpi_home_small.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable-xxhdpi_home_small.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark_focused.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark_normal.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_disabled.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_focused.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_normal.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_focused.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_normal.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_disabled.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light_focused.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light_normal.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_notification_bg.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_notification_icon_background.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/drawable_notification_tile_bg.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout-v21_notification_action.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout-v21_notification_action_tombstone.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout-v21_notification_template_custom_big.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout-v21_notification_template_icon_group.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout_notification_media_action.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout_notification_template_big_media.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout_notification_template_big_media_custom.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow_custom.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout_notification_template_lines_media.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout_notification_template_media.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout_notification_template_media_custom.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/layout_notification_template_part_time.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/menu_main.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/menu_main.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/libImageProc.so" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/libImageProc.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/libjpeg.a" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/libjpeg.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/ImageProc/ImageProc.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/ImageProc/ImageProc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/ImageProc/ImageProc.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/ImageProc/ImageProc.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jaricom.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jaricom.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jaricom.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jaricom.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcapimin.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcapimin.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcapimin.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcapimin.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcapistd.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcapistd.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcapistd.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcapistd.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcarith.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcarith.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcarith.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcarith.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jccoefct.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jccoefct.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jccoefct.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jccoefct.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jccolor.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jccolor.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jccolor.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jccolor.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcdctmgr.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcdctmgr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcdctmgr.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcdctmgr.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jchuff.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jchuff.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jchuff.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jchuff.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcinit.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcinit.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcinit.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcinit.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcmainct.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcmainct.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcmainct.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcmainct.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcmarker.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcmarker.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcmarker.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcmarker.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcmaster.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcmaster.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcmaster.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcmaster.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcomapi.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcomapi.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcomapi.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcomapi.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcparam.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcparam.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcparam.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcparam.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcprepct.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcprepct.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcprepct.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcprepct.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcsample.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcsample.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcsample.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jcsample.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jctrans.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jctrans.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jctrans.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jctrans.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdapimin.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdapimin.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdapimin.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdapimin.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdapistd.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdapistd.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdapistd.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdapistd.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdarith.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdarith.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdarith.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdarith.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdatadst.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdatadst.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdatadst.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdatadst.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdatasrc.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdatasrc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdatasrc.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdatasrc.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdcoefct.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdcoefct.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdcoefct.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdcoefct.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdcolor.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdcolor.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdcolor.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdcolor.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jddctmgr.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jddctmgr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jddctmgr.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jddctmgr.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdhuff.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdhuff.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdhuff.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdhuff.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdinput.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdinput.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdinput.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdinput.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmainct.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmainct.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmainct.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmainct.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmarker.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmarker.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmarker.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmarker.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmaster.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmaster.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmaster.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmaster.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmerge.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmerge.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmerge.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdmerge.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdpostct.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdpostct.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdpostct.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdpostct.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdsample.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdsample.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdsample.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdsample.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdtrans.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdtrans.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdtrans.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jdtrans.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jerror.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jerror.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jerror.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jerror.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jfdctflt.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jfdctflt.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jfdctflt.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jfdctflt.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jfdctfst.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jfdctfst.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jfdctfst.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jfdctfst.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jfdctint.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jfdctint.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jfdctint.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jfdctint.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jidctflt.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jidctflt.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jidctflt.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jidctflt.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jidctfst.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jidctfst.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jidctfst.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jidctfst.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jidctint.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jidctint.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jidctint.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jidctint.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jmemmgr.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jmemmgr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jmemmgr.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jmemmgr.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jmemnobs.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jmemnobs.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jmemnobs.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jmemnobs.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jquant1.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jquant1.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jquant1.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jquant1.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jquant2.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jquant2.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jquant2.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jquant2.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jutils.o" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jutils.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jutils.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/cocos_jpeg_static/jutils.o.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-af_values-af.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-af_values-af.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-am_values-am.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-am_values-am.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-ar_values-ar.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-ar_values-ar.arsc.flat" afterDir="false" />
@@ -457,7 +214,7 @@
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-or_values-or.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-or_values-or.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-pa_values-pa.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-pa_values-pa.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-pl_values-pl.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-pl_values-pl.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-port_values-port.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-port_values-port.arsc.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-port_values-port.arsc.flat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-pt-rBR_values-pt-rBR.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-pt-rBR_values-pt-rBR.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-pt-rPT_values-pt-rPT.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-pt-rPT_values-pt-rPT.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-pt_values-pt.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-pt_values-pt.arsc.flat" afterDir="false" />
@@ -482,7 +239,7 @@
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-v14_values-v14.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-v14_values-v14.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-v16_values-v16.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-v16_values-v16.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-v21_values-v21.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-v21_values-v21.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-v24_values-v24.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-v24_values-v24.arsc.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-v24_values-v24.arsc.flat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-vi_values-vi.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-vi_values-vi.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-w820dp-v13_values-w820dp-v13.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-w820dp-v13_values-w820dp-v13.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-zh-rCN_values-zh-rCN.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-zh-rCN_values-zh-rCN.arsc.flat" afterDir="false" />
@@ -490,15 +247,10 @@
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/split-apk/debug/resources/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/split-apk/debug/resources/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/split-apk/debug/slices/slice_2.apk" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/split-apk/debug/slices/slice_2.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/symbols/debug/R.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/transforms/dexBuilder/debug/30/com/sourceauditor/sahomemonitor/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/transforms/dexBuilder/debug/30/com/sourceauditor/sahomemonitor/MainActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/transforms/dexMerger/debug/2/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/transforms/dexMerger/debug/2/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/transforms/instantRun/debug/0/com/sourceauditor/sahomemonitor/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/intermediates/transforms/instantRun/debug/0/com/sourceauditor/sahomemonitor/MainActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/sAHomeMonitoreclipse.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/src/main/java/com/sourceauditor/sahomemonitor/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/src/main/java/com/sourceauditor/sahomemonitor/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/src/main/java/com/sourceauditor/sahomemonitor/MyFirebaseMessagingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sAHomeMonitoreclipse/src/main/java/com/sourceauditor/sahomemonitor/MyFirebaseMessagingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sAHomeMonitoreclipse/src/main/res/drawable-hdpi/Thumbs.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -514,7 +266,30 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SAHomeMonitor" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SAHomeMonitor" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SAHomeMonitor" type="f1a62948:ProjectNode" />
+                <item name="sAHomeMonitoreclipse" type="2d1252cf:ModuleNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -525,6 +300,9 @@
       </list>
     </option>
   </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -534,9 +312,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="SAHomeMonitor.sAHomeMonitoreclipse" />
     <property name="DEBUGGABLE_DEVICE" value="emulator-5554" />
     <property name="DEBUGGABLE_PROCESS" value="com.sourceauditor.sahomemonitor" />
     <property name="DEBUGGER_ID" value="Auto" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="1A061JEG500892" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-11-28T05:07:36.750Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -545,6 +326,9 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="Nexus_5X_API_26" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
@@ -695,9 +479,49 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="287" y="159" key="#PSD" timestamp="1638051574933">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="287" y="159" key="#PSD/0.0.1536.824@0.0.1536.824" timestamp="1638051574933" />
     <state x="523" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1635290783485">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="523" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1635290783485" />
+    <state x="575" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1638055752419">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="575" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1638055752419" />
+    <state width="1492" height="252" key="GridCell.Tab.0.bottom" timestamp="1638117520203">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1638117520203" />
+    <state width="1492" height="252" key="GridCell.Tab.0.center" timestamp="1638117520203">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1638117520203" />
+    <state width="1492" height="252" key="GridCell.Tab.0.left" timestamp="1638117520203">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1638117520203" />
+    <state width="1492" height="252" key="GridCell.Tab.0.right" timestamp="1638117520203">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1638117520203" />
+    <state width="1492" height="252" key="GridCell.Tab.1.bottom" timestamp="1638117520203">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1638117520203" />
+    <state width="1492" height="252" key="GridCell.Tab.1.center" timestamp="1638117520203">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1638117520203" />
+    <state width="1492" height="252" key="GridCell.Tab.1.left" timestamp="1638117520203">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1638117520203" />
+    <state width="1492" height="252" key="GridCell.Tab.1.right" timestamp="1638117520203">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1638117520203" />
   </component>
 </project>

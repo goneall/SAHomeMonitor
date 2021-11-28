@@ -1,19 +1,24 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'  // Google Services plugin
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "28.0.3"
+    compileSdkVersion 30
+    buildToolsVersion '30.0.0'
 
     defaultConfig {
         applicationId "com.sourceauditor.sahomemonitor"
-        minSdkVersion 21
-        targetSdkVersion 27
+        minSdkVersion 27
+        targetSdkVersion 30
     }
 
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
         }
     }
     externalNativeBuild {
@@ -23,17 +28,11 @@ android {
     }
     ndkVersion '20.0.5594570'
 }
-ext {
-    supportLibraryVersion = '27.1.1'
-}
 
 dependencies {
-    implementation "com.android.support:support-v4:$supportLibraryVersion"
-    implementation platform('com.google.firebase:firebase-bom:28.4.2')
+    implementation platform('com.google.firebase:firebase-bom:29.0.0')
     implementation 'com.google.firebase:firebase-analytics'
-    implementation 'com.google.firebase:firebase-core:16.0.1'
-    implementation "com.google.firebase:firebase-messaging:17.3.4"
+    implementation "com.google.firebase:firebase-messaging"
     implementation 'com.eatthepath:java-otp:0.1.0'
     implementation 'commons-codec:commons-codec:1.11'
 }
-apply plugin: 'com.google.gms.google-services'

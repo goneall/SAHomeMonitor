@@ -3,23 +3,20 @@ package com.sourceauditor.sahomemonitor;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
-import android.app.job.JobInfo;
-import android.app.job.JobScheduler;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.RingtoneManager;
 import android.net.Uri;
-import android.os.Build;
-import android.os.PersistableBundle;
-import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
 import java.util.Map;
+
+import androidx.annotation.NonNull;
+import androidx.core.app.NotificationCompat;
 
 import static com.sourceauditor.sahomemonitor.MainActivity.ACTION_HOME_NOFICATION;
 import static com.sourceauditor.sahomemonitor.MainActivity.ACTION_UPDATDIRECT_NOTIFICATION;
@@ -129,7 +126,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     }
 
     @Override
-    public void onNewToken(String token) {
+    public void onNewToken(@NonNull String token) {
         Log.d(TAG, "Refreshed token: " + token);
         RegisterNewClientJob.sendRegistrationToServer(token, this);
     }
@@ -179,12 +176,10 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         }
 
         // Since android Oreo notification channel is needed.
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel channel = new NotificationChannel(channelId,
-                    getString(R.string.default_notification_channel_name),
-                    NotificationManager.IMPORTANCE_HIGH);
-            notificationManager.createNotificationChannel(channel);
-        }
+        NotificationChannel channel = new NotificationChannel(channelId,
+                getString(R.string.default_notification_channel_name),
+                NotificationManager.IMPORTANCE_HIGH);
+        notificationManager.createNotificationChannel(channel);
 
         notificationManager.notify(NOTIFICATION_ID, notificationBuilder.build());
     }
