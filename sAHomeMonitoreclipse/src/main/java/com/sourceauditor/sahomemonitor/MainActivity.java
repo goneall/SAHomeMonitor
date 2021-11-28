@@ -22,17 +22,18 @@ import java.io.IOException;
 import com.camera.simplemjpeg.DoRead;
 import com.camera.simplemjpeg.MjpegView;
 import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.android.gms.common.GoogleApiAvailabilityLight;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.InstanceIdResult;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -45,15 +46,16 @@ import android.media.MediaPlayer.OnBufferingUpdateListener;
 import android.media.MediaPlayer.OnErrorListener;
 import android.media.MediaPlayer.OnPreparedListener;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 
 public class MainActivity extends Activity implements OnPreparedListener, OnBufferingUpdateListener, OnErrorListener, OnAudioFocusChangeListener {
 
@@ -85,7 +87,7 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
     /**
      * For recieving messages from the home monitor if the activity is running in the foreground
      */
-    private BroadcastReceiver mReceiver = new BroadcastReceiver() {
+    private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             processMessageFromHome(intent);
@@ -139,25 +141,17 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 				}
 			}
 		});
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-			// Create channel to show notifications.
-			String channelId  = getString(R.string.default_notification_channel_id);
-			String channelName = getString(R.string.default_notification_channel_name);
-			NotificationManager notificationManager =
-					getSystemService(NotificationManager.class);
-			if (notificationManager != null) {
-                notificationManager.createNotificationChannel(new NotificationChannel(channelId,
-                        channelName, NotificationManager.IMPORTANCE_LOW));
-            }
-		}
-		int googlePlayStatus = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(context);
-        if (googlePlayStatus != ConnectionResult.SUCCESS) {
-            GoogleApiAvailability.getInstance().getErrorDialog(this, googlePlayStatus, 0, new DialogInterface.OnCancelListener() {
-                @Override
-                public void onCancel(DialogInterface dialog) {
-                    logAndDisplayError("Note that some features of the home monitor may not work correctly");
-                }
-            });
+		// Create channel to show notifications.
+		String channelId  = getString(R.string.default_notification_channel_id);
+		String channelName = getString(R.string.default_notification_channel_name);
+		NotificationManager notificationManager =
+				getSystemService(NotificationManager.class);
+		if (notificationManager != null) {
+notificationManager.createNotificationChannel(new NotificationChannel(channelId,
+channelName, NotificationManager.IMPORTANCE_LOW));
+}
+        if (GoogleApiAvailabilityLight.getInstance().isGooglePlayServicesAvailable(context) != ConnectionResult.SUCCESS) {
+        	showDialog("Error", "Note that some features of the home monitor may not work correctly");
         }
 	}
 	
@@ -381,43 +375,71 @@ public class MainActivity extends Activity implements OnPreparedListener, OnBuff
 	}
 
 	private void showDialog(String title, String msg) {
+		TextView dialogText = new TextView(this);
+		dialogText.setText(msg);
+		dialogText.setOnLongClickListener(new View.OnLongClickListener() {
+			@Override
+			public boolean onLongClick(View v) {
+				// Copy the Text to the clipboard
+				ClipboardManager manager =
+						(ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+				TextView tv = (TextView) v;
+				manager.setPrimaryClip(ClipData.newPlainText("Message", tv.getText()));
+				// Show a message:
+				Toast.makeText(v.getContext(), "Copied to clipboard",
+						Toast.LENGTH_SHORT)
+						.show();
+				return true;
+			}
+		});
 		AlertDialog.Builder adb = new AlertDialog.Builder(this);
-		adb.setTitle(title);
-		adb.setMessage(msg)
-			.setCancelable(true)
-			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+		adb.setTitle(title)
+				.setView(dialogText)
+				.setCancelable(true)
+					.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					dialog.cancel();
-				}
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						dialog.cancel();
+					}
 				
-			})
-			.create()
-			.show();
+				})
+				.create()
+				.show();
 	}
 
 	private void showRegistrationId() {
-        FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(this, new OnCompleteListener<InstanceIdResult>() {
-            @Override
-            public void onComplete(@NonNull Task<InstanceIdResult> task) {
-                if (task.getResult() != null) {
-                    showDialog(getString(R.string.title_show_reg), task.getResult().getToken());
-                }
-            }
-        });
+		FirebaseMessaging.getInstance().getToken().addOnCompleteListener(
+				new OnCompleteListener<String>() {
+					@Override
+					public void onComplete(@NonNull Task<String> task) {
+						if (!task.isSuccessful()) {
+							Log.w(TAG, "Fetching FCM registration token failed", task.getException());
+							return;
+						}
+
+						// Get new FCM registration token
+						String token = task.getResult();
+						showDialog(getString(R.string.title_show_reg), token);
+					}
+				});
     }
 
     private void registerWithHomeMonitor() {
-        FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(this, new OnCompleteListener<InstanceIdResult>() {
-            @Override
-            public void onComplete(@NonNull Task<InstanceIdResult> task) {
-                if (task.getResult() != null) {
-                    RegisterNewClientJob.sendRegistrationToServer(task.getResult().getToken(), getApplicationContext());
-                }
-            }
-        });
+		FirebaseMessaging.getInstance().getToken().addOnCompleteListener(
+				new OnCompleteListener<String>() {
+					@Override
+					public void onComplete(@NonNull Task<String> task) {
+						if (!task.isSuccessful()) {
+							Log.w(TAG, "Fetching FCM registration token failed", task.getException());
+							return;
+						}
 
+						// Get new FCM registration token
+						String token = task.getResult();
+						RegisterNewClientJob.sendRegistrationToServer(token, getApplicationContext());
+					}
+				});
     }
 	
 	private void showUrl() {

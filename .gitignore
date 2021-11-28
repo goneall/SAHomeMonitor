@@ -20,6 +20,7 @@ out/
 # Gradle files
 .gradle/
 build/
+sAHomeMonitoreclipse/build/
 
 # Local configuration file (sdk path, etc)
 local.properties
